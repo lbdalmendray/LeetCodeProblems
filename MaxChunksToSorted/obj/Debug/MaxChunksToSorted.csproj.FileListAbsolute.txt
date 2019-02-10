@@ -1,0 +1,6 @@
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\MaxChunksToSorted\bin\Debug\MaxChunksToSorted.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\MaxChunksToSorted\bin\Debug\MaxChunksToSorted.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\MaxChunksToSorted\bin\Debug\MaxChunksToSorted.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\MaxChunksToSorted\obj\Debug\MaxChunksToSorted.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\MaxChunksToSorted\obj\Debug\MaxChunksToSorted.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\MaxChunksToSorted\obj\Debug\MaxChunksToSorted.csproj.CoreCompileInputs.cache

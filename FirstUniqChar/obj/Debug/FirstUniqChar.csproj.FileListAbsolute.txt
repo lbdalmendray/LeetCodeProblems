@@ -1,0 +1,7 @@
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FirstUniqChar\bin\Debug\FirstUniqChar.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FirstUniqChar\bin\Debug\FirstUniqChar.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FirstUniqChar\bin\Debug\FirstUniqChar.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FirstUniqChar\obj\Debug\FirstUniqChar.csproj.CoreCompileInputs.cache
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FirstUniqChar\obj\Debug\FirstUniqChar.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FirstUniqChar\obj\Debug\FirstUniqChar.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FirstUniqChar\obj\Debug\FirstUniqChar.csprojAssemblyReference.cache

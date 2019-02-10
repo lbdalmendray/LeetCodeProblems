@@ -1,0 +1,13 @@
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\ContainVirus\bin\Debug\ContainVirus.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\ContainVirus\bin\Debug\ContainVirus.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\ContainVirus\bin\Debug\ContainVirus.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\ContainVirus\obj\Debug\ContainVirus.csprojResolveAssemblyReference.cache
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\ContainVirus\obj\Debug\ContainVirus.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\ContainVirus\obj\Debug\ContainVirus.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ContainVirus\bin\Debug\ContainVirus.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ContainVirus\bin\Debug\ContainVirus.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ContainVirus\bin\Debug\ContainVirus.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ContainVirus\obj\Debug\ContainVirus.csproj.CoreCompileInputs.cache
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ContainVirus\obj\Debug\ContainVirus.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ContainVirus\obj\Debug\ContainVirus.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ContainVirus\obj\Debug\ContainVirus.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountPrimeSetBits\bin\Debug\CountPrimeSetBits.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountPrimeSetBits\bin\Debug\CountPrimeSetBits.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountPrimeSetBits\bin\Debug\CountPrimeSetBits.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountPrimeSetBits\obj\Debug\CountPrimeSetBits.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountPrimeSetBits\obj\Debug\CountPrimeSetBits.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountPrimeSetBits\obj\Debug\CountPrimeSetBits.csproj.CoreCompileInputs.cache

@@ -1,0 +1,7 @@
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\RotatedDigits\bin\Debug\RotatedDigits.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\RotatedDigits\bin\Debug\RotatedDigits.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\RotatedDigits\bin\Debug\RotatedDigits.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\RotatedDigits\obj\Debug\RotatedDigits.csproj.CoreCompileInputs.cache
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\RotatedDigits\obj\Debug\RotatedDigits.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\RotatedDigits\obj\Debug\RotatedDigits.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\RotatedDigits\obj\Debug\RotatedDigits.csprojAssemblyReference.cache

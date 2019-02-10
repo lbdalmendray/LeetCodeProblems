@@ -1,0 +1,13 @@
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\CountCornerRectangles\bin\Debug\CountCornerRectangles.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\CountCornerRectangles\bin\Debug\CountCornerRectangles.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\CountCornerRectangles\bin\Debug\CountCornerRectangles.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\CountCornerRectangles\obj\Debug\CountCornerRectangles.csprojResolveAssemblyReference.cache
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\CountCornerRectangles\obj\Debug\CountCornerRectangles.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\CountCornerRectangles\obj\Debug\CountCornerRectangles.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountCornerRectangles\bin\Debug\CountCornerRectangles.exe.config
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountCornerRectangles\bin\Debug\CountCornerRectangles.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountCornerRectangles\bin\Debug\CountCornerRectangles.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountCornerRectangles\obj\Debug\CountCornerRectangles.csproj.CoreCompileInputs.cache
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountCornerRectangles\obj\Debug\CountCornerRectangles.exe
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountCornerRectangles\obj\Debug\CountCornerRectangles.pdb
+E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\CountCornerRectangles\obj\Debug\CountCornerRectangles.csprojAssemblyReference.cache
