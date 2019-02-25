@@ -1,6 +1,0 @@
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\NumberLongestIncreasingSubseq\bin\Debug\NumberLongestIncreasingSubseq.exe.config
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\NumberLongestIncreasingSubseq\bin\Debug\NumberLongestIncreasingSubseq.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\NumberLongestIncreasingSubseq\bin\Debug\NumberLongestIncreasingSubseq.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\NumberLongestIncreasingSubseq\obj\Debug\NumberLongestIncreasingSubseq.csprojResolveAssemblyReference.cache
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\NumberLongestIncreasingSubseq\obj\Debug\NumberLongestIncreasingSubseq.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\NumberLongestIncreasingSubseq\obj\Debug\NumberLongestIncreasingSubseq.pdb
