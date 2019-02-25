@@ -4,10 +4,3 @@ E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeP
 E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\FindRedundantDirectedConnection\bin\Debug\FindRedundantDirectedConnection.pdb
 E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\FindRedundantDirectedConnection\obj\Debug\FindRedundantDirectedConnection.exe
 E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\FindRedundantDirectedConnection\obj\Debug\FindRedundantDirectedConnection.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FindRedundantDirectedConnection\bin\Debug\FindRedundantDirectedConnection.exe.config
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FindRedundantDirectedConnection\obj\Debug\FindRedundantDirectedConnection.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FindRedundantDirectedConnection\obj\Debug\FindRedundantDirectedConnection.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FindRedundantDirectedConnection\bin\Debug\FindRedundantDirectedConnection.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FindRedundantDirectedConnection\bin\Debug\FindRedundantDirectedConnection.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FindRedundantDirectedConnection\obj\Debug\FindRedundantDirectedConnection.csproj.CoreCompileInputs.cache
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\FindRedundantDirectedConnection\obj\Debug\FindRedundantDirectedConnection.csprojAssemblyReference.cache

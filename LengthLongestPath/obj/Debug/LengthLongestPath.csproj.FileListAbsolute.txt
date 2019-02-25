@@ -1,7 +1,0 @@
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\LengthLongestPath\bin\Debug\LengthLongestPath.exe.config
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\LengthLongestPath\bin\Debug\LengthLongestPath.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\LengthLongestPath\bin\Debug\LengthLongestPath.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\LengthLongestPath\obj\Debug\LengthLongestPath.csproj.CoreCompileInputs.cache
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\LengthLongestPath\obj\Debug\LengthLongestPath.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\LengthLongestPath\obj\Debug\LengthLongestPath.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\LengthLongestPath\obj\Debug\LengthLongestPath.csprojAssemblyReference.cache

@@ -1,6 +1,0 @@
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ShortestPalindrome\bin\Debug\ShortestPalindrome.exe.config
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ShortestPalindrome\bin\Debug\ShortestPalindrome.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ShortestPalindrome\bin\Debug\ShortestPalindrome.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ShortestPalindrome\obj\Debug\ShortestPalindrome.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ShortestPalindrome\obj\Debug\ShortestPalindrome.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\ShortestPalindrome\obj\Debug\ShortestPalindrome.csproj.CoreCompileInputs.cache

@@ -4,10 +4,3 @@ E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeP
 E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\Merge_k_Sorted_Lists\obj\Debug\Merge_k_Sorted_Lists.csprojResolveAssemblyReference.cache
 E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\Merge_k_Sorted_Lists\obj\Debug\Merge_k_Sorted_Lists.exe
 E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeedCodeProblems\Merge_k_Sorted_Lists\obj\Debug\Merge_k_Sorted_Lists.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Merge_k_Sorted_Lists\bin\Debug\Merge_k_Sorted_Lists.exe.config
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Merge_k_Sorted_Lists\bin\Debug\Merge_k_Sorted_Lists.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Merge_k_Sorted_Lists\bin\Debug\Merge_k_Sorted_Lists.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Merge_k_Sorted_Lists\obj\Debug\Merge_k_Sorted_Lists.csproj.CoreCompileInputs.cache
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Merge_k_Sorted_Lists\obj\Debug\Merge_k_Sorted_Lists.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Merge_k_Sorted_Lists\obj\Debug\Merge_k_Sorted_Lists.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Merge_k_Sorted_Lists\obj\Debug\Merge_k_Sorted_Lists.csprojAssemblyReference.cache

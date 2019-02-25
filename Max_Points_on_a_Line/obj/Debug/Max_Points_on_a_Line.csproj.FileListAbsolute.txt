@@ -1,7 +1,0 @@
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Max_Points_on_a_Line\obj\Debug\Max_Points_on_a_Line.csproj.CoreCompileInputs.cache
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Max_Points_on_a_Line\bin\Debug\Max_Points_on_a_Line.exe.config
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Max_Points_on_a_Line\bin\Debug\Max_Points_on_a_Line.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Max_Points_on_a_Line\bin\Debug\Max_Points_on_a_Line.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Max_Points_on_a_Line\obj\Debug\Max_Points_on_a_Line.exe
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Max_Points_on_a_Line\obj\Debug\Max_Points_on_a_Line.pdb
-E:\Luis\My Documents\MyDocuments 7-10-2017\Visual Studio 2013\Projects\leetcodeProblems\LeetCodeProblems\Max_Points_on_a_Line\obj\Debug\Max_Points_on_a_Line.csprojAssemblyReference.cache
