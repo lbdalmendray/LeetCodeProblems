@@ -20,6 +20,10 @@ namespace IsNumber
 
             string[] numbers = new string[]
             {
+                "-.1e10",
+                ".",
+                ".1e10",
+                "1.e10",
                 "   .-4",
                 "   111e+20",
                 "   111e-20",
