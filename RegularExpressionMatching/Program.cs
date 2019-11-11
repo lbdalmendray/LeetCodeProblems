@@ -16,6 +16,8 @@ namespace RegularExpressionMatching
             Tuple<string, string, bool>[] relations = new Tuple<string, string, bool>[]
             {
                 //"aaa" "aaaa"
+                new Tuple<string,string, bool>("abce","abc.*..",false),
+                new Tuple<string,string, bool>("aa","*",false),
                 new Tuple<string,string, bool>("aaa","aaaa",false),
                 new Tuple<string,string, bool>("aa","a",false),
                 new Tuple<string,string, bool>("aa","aa",true),
