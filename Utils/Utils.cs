@@ -92,5 +92,42 @@ namespace Utils
                 }
             }
         }
+
+        public static int[][] ParseArrayArrayInteger(string inputString)
+        {
+            LinkedList<LinkedList<int>> result = new LinkedList<LinkedList<int>>();
+            LinkedList<int> currentList = null;
+            int openCount = 0;
+            for (int i = 0; i < inputString.Length; i++)
+            {
+                var item = inputString[i];
+                if (item == '[')
+                {
+                    openCount++;
+                    if (openCount == 2)
+                    {
+                        currentList = new LinkedList<int>();
+                        result.AddLast(currentList);
+                    }
+                }
+                else if (item == ']')
+                {
+                    openCount--;
+                }
+                else if (Char.IsDigit(item))
+                {
+                    int lastIndex = i;
+                    while(Char.IsDigit(inputString[lastIndex]))
+                    {
+                        lastIndex++;
+                    }
+                    lastIndex--;
+
+                    currentList.AddLast(int.Parse(inputString.Substring(i, lastIndex - i + 1)));
+                }
+            }
+
+            return result.Select(e => e.ToArray()).ToArray();
+        }
     }
 }
