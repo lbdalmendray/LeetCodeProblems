@@ -15,7 +15,8 @@ namespace Utils
         {
             if (ElementComparer == null)
                 this.ElementComparer = Comparer<TElement>.Default;
-            this.ElementComparer = ElementComparer;
+            else
+                this.ElementComparer = ElementComparer;
         }
 
         public bool Equals( IEnumerable<TElement> elements1 , IEnumerable<TElement> elements2)
