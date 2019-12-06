@@ -197,7 +197,23 @@ namespace SplitArrayWithSameAverageTest
             var result1 = s.SplitArraySameAverage(input.ToArray());
         }
 
+
+        [TestMethod]
+        public void TestMethod16()
+        {
+            Solution s = new Solution();
+            Assert.IsFalse(s.SplitArraySameAverage(new int[] { 0 }));
+        }
+
+        [TestMethod]
+        public void TestMethod17()
+        {
+            Solution s = new Solution();
+            Assert.IsFalse(s.SplitArraySameAverage(new int[] { 60, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30 }));
+        }
+
         // 7263 4405 1548 8692 5835 2978 120 7264 4407 1550
+        // 60,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30
 
         private string ToStringNew(int[] input)
         {
@@ -230,7 +246,7 @@ namespace SplitArrayWithSameAverageTest
                 return false;
             }
             if (input.Length == 1)
-                return true;
+                return false;
             
             foreach (var item in Utils.Utils.GetAllSelections(input.Length))
             {

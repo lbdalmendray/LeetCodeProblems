@@ -11,6 +11,9 @@ namespace SplitArrayWithSameAverage
     {
         public bool SplitArraySameAverage(int[] A)
         {
+            if (A.Length == 1)
+                return false;
+
             var average = A.Average();
             if (A.Any(e => e == average))
                 return true;
@@ -21,14 +24,15 @@ namespace SplitArrayWithSameAverage
             bool bigDeltasIsMin = bigDeltas.Length < lowDeltas.Length;
             uint Max = 0;
             Dictionary<double,int> hashset = null;
+            var hashsetValue = 0;
             if (bigDeltasIsMin)
             {
                 Max = (uint)Math.Pow(2, bigDeltas.Length);
                 hashset = new Dictionary<double,int>((int)Max - bigDeltas.Length);
-                for (UInt32 i = 1; i <= Max; i++)
+                for (UInt32 i = 1; i < Max; i++)
                 {
                     var bitarrayIndexes = GetTrueIndexes(new BitArray(BitConverter.GetBytes(i)), bigDeltas.Length);
-                    if (bitarrayIndexes.Count() == 0)
+                    if (bitarrayIndexes.Count() == bigDeltas.Length)
                     {
                         continue;
                     }
@@ -40,20 +44,18 @@ namespace SplitArrayWithSameAverage
                         hashset.Add(sum,bitarrayIndexes.Count());
                     }
                 }
-
+                if (hashset.Count == 0)
+                    return false;
                 Max = (uint)Math.Pow(2, lowDeltas.Length);
-
-                for (int i = 3; i <= Max; i++)
+                
+                for (int i = 1; i < Max; i++)
                 {
                     var bitarrayIndexes = GetTrueIndexes(new BitArray(BitConverter.GetBytes(i)), lowDeltas.Length);
-                    if (bitarrayIndexes.Count() == 0)
-                    {
-                        continue;
-                    }
 
                     var sum = -bitarrayIndexes.Select(index => lowDeltas[index]).Sum();
                     sum = Math.Round(sum, 4);
-                    if (hashset.ContainsKey(sum) && bitarrayIndexes.Count() + hashset[sum] < A.Length)
+                    ;
+                    if (hashset.TryGetValue(sum, out hashsetValue) && bitarrayIndexes.Count() + hashsetValue < A.Length)
                     {
                         return true;
                     }
@@ -63,10 +65,10 @@ namespace SplitArrayWithSameAverage
             {
                 Max = (uint)Math.Pow(2, lowDeltas.Length);
                 hashset = new Dictionary<double, int>((int)Max - lowDeltas.Length);
-                for (UInt32 i = 1; i <= Max; i++)
+                for (UInt32 i = 1; i < Max; i++)
                 {
                     var bitarrayIndexes = GetTrueIndexes(new BitArray(BitConverter.GetBytes(i)),lowDeltas.Length);
-                    if(bitarrayIndexes.Count()==0)
+                    if(bitarrayIndexes.Count() == lowDeltas.Length)
                     {
                         continue;
                     }
@@ -78,20 +80,18 @@ namespace SplitArrayWithSameAverage
                         hashset.Add(sum,bitarrayIndexes.Count());
                     }                                       
                 }
+                if (hashset.Count == 0)
+                    return false;
 
                 Max = (uint)Math.Pow(2, bigDeltas.Length);
 
-                for (int i = 1; i <= Max; i++)
+                for (int i = 1; i < Max; i++)
                 {
                     var bitarrayIndexes = GetTrueIndexes(new BitArray(BitConverter.GetBytes(i)), bigDeltas.Length);
-                    if (bitarrayIndexes.Count() == 0)
-                    {
-                        continue;
-                    }
 
                     var sum = bitarrayIndexes.Select(index => bigDeltas[index]).Sum();
                     sum = Math.Round(sum, 4);
-                    if (hashset.ContainsKey(sum) && hashset[sum] + bitarrayIndexes.Count() < A.Length)
+                    if (hashset.TryGetValue(sum, out hashsetValue) && hashsetValue + bitarrayIndexes.Count() < A.Length)
                     {
                         return true;
                     }
