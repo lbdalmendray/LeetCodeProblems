@@ -254,6 +254,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordBreakII", "WordBreakII\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordBreakIITest", "WordBreakIITest\WordBreakIITest.csproj", "{F5055406-307D-450E-9CF6-08CE2EEB814C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterleavingString", "InterleavingString\InterleavingString.csproj", "{A8597B3D-56AB-46A2-B692-4A3C51D74034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterleavingStringTest", "InterleavingStringTest\InterleavingStringTest.csproj", "{D59A0372-7296-43C1-8B02-4F246A5265E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumNumberofFlipstoConvertBinaryMatrixtoZeroMatrix", "MinimumNumberofFlipstoConvertBinaryMatrixtoZeroMatrix\MinimumNumberofFlipstoConvertBinaryMatrixtoZeroMatrix.csproj", "{4C70A24F-4580-401F-AF97-70A3EB9232AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumNumberofFlipstoConvertBinaryMatrixtoZeroMatrixTest", "MinimumNumberofFlipstoConvertBinaryMatrixtoZeroMatrixTest\MinimumNumberofFlipstoConvertBinaryMatrixtoZeroMatrixTest.csproj", "{09AB8732-50D7-4064-97C3-E542E6532FB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -728,6 +736,22 @@ Global
 		{F5055406-307D-450E-9CF6-08CE2EEB814C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5055406-307D-450E-9CF6-08CE2EEB814C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5055406-307D-450E-9CF6-08CE2EEB814C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8597B3D-56AB-46A2-B692-4A3C51D74034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8597B3D-56AB-46A2-B692-4A3C51D74034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8597B3D-56AB-46A2-B692-4A3C51D74034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8597B3D-56AB-46A2-B692-4A3C51D74034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D59A0372-7296-43C1-8B02-4F246A5265E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59A0372-7296-43C1-8B02-4F246A5265E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59A0372-7296-43C1-8B02-4F246A5265E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59A0372-7296-43C1-8B02-4F246A5265E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C70A24F-4580-401F-AF97-70A3EB9232AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C70A24F-4580-401F-AF97-70A3EB9232AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C70A24F-4580-401F-AF97-70A3EB9232AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C70A24F-4580-401F-AF97-70A3EB9232AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09AB8732-50D7-4064-97C3-E542E6532FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AB8732-50D7-4064-97C3-E542E6532FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AB8732-50D7-4064-97C3-E542E6532FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AB8732-50D7-4064-97C3-E542E6532FB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -786,6 +810,8 @@ Global
 		{6B7DA7A3-239C-44F6-8722-3BC29CEF4546} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{9B04790E-31F1-4E5F-9D4A-B20E95475CE7} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{F5055406-307D-450E-9CF6-08CE2EEB814C} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
+		{D59A0372-7296-43C1-8B02-4F246A5265E8} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
+		{09AB8732-50D7-4064-97C3-E542E6532FB4} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}

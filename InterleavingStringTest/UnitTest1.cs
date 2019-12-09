@@ -193,12 +193,29 @@ namespace InterleavingStringTest
         public void TestMethod18()
         {
             Solution s = new Solution();
-            var s1 = new string(Enumerable.Repeat('a', 100000).ToArray());
-            var s2 = new string(Enumerable.Repeat('b', 100000).ToArray());
+            var s1 = new string(Enumerable.Repeat('a', 1000).ToArray());
+            var s2 = new string(Enumerable.Repeat('b', 1000).ToArray());
             var s3 = s1 + s2;
             var result = s.IsInterleave(s1, s2, s3);
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void TestMethod19()
+        {
+            Solution s = new Solution();
+            var s1 = "bbcbaba";
+            var s2 = "aaccc";
+            var s3 = "baccbaabbcca";
+            var result = s.IsInterleave(s1, s2, s3);
+            Assert.IsFalse(result);
+        }
+
+        /*
+         "bbcbaba"
+"aaccc"
+"baccbaabbcca"
+         * */
 
         [TestMethod]
         public void TestMethodManyFalse()

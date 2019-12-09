@@ -54,6 +54,18 @@ namespace InterleavingString
                 commonS2S3SufixCount++;
             }
 
+            for (int j = s1.Length-1; j > 0; j--)
+            {
+                var s1_j_array = dictionaryList[s1[j]];
+                bool AllS3PrefixIndexVerifiedJ = true;
+                bool isNotOutOfMemoryJ = true;
+                for (int i = 0; i < s1_j_array.Length; i++)
+                {
+                     if (!AllS3PrefixIndexVerifiedJ)
+                        break;
+                    IsInterleave(ref isNotOutOfMemoryJ, j, s1_j_array[i], i, false, 0, 0, s1S3infos, dictionaryList, s1, s2, s3, commonS2S3SufixCount, out AllS3PrefixIndexVerifiedJ, forwards, s2S3infos);
+                }
+            }
             var s1_0_array = dictionaryList[s1[0]];
             bool AllS3PrefixIndexVerified = true;
             bool isNotOutOfMemory = true;
@@ -84,7 +96,7 @@ namespace InterleavingString
                 }
                 for (int i = index; i <s3.Length; i++)
                 {
-                    currentArray[index] = -1;
+                    currentArray[i] = -1;
                 }
                 result.Add(keyValue.Key, currentArray);
             }
@@ -173,7 +185,7 @@ namespace InterleavingString
                         var s2IndexToVerify = (s3Index - s1Index) ;  
                         try
                         {
-                            if (IsInterleave(ref isNotOutOfMemory, s1Index + 1, s1_s1IndexPlus1_array[i], i, s3Index + 1 < s1_s1IndexPlus1_array[i], s3Index + 1, s2IndexToVerify, s1S3infos, dictionaryList, s1, s2, s3, commonS2S3SufixCount, out AllS3PrefixIndexVerifiedLevel2, forwards,s2S3infos))
+                            if (IsInterleave(ref isNotOutOfMemory, s1Index + 1, s1_s1IndexPlus1_array[i], i, s3Index + 1 < s1_s1IndexPlus1_array[i] && s2IndexToVerify > -1, s3Index + 1, s2IndexToVerify, s1S3infos, dictionaryList, s1, s2, s3, commonS2S3SufixCount, out AllS3PrefixIndexVerifiedLevel2, forwards,s2S3infos))
                             {
                                 if (isNotOutOfMemory)
                                     s1S3infos[s1Index].Add(s3Index, true);
@@ -184,7 +196,7 @@ namespace InterleavingString
                         {
                             isNotOutOfMemory = false;
                             FreeMemory(s1S3infos);
-                            if (IsInterleave(ref isNotOutOfMemory, s1Index + 1, s1_s1IndexPlus1_array[i], i, s3Index + 1 < s1_s1IndexPlus1_array[i], s3Index + 1, s2IndexToVerify, s1S3infos, dictionaryList, s1, s2, s3, commonS2S3SufixCount, out AllS3PrefixIndexVerifiedLevel2, forwards, s2S3infos))
+                            if (IsInterleave(ref isNotOutOfMemory, s1Index + 1, s1_s1IndexPlus1_array[i], i, s3Index + 1 < s1_s1IndexPlus1_array[i] && s2IndexToVerify > -1, s3Index + 1, s2IndexToVerify, s1S3infos, dictionaryList, s1, s2, s3, commonS2S3SufixCount, out AllS3PrefixIndexVerifiedLevel2, forwards, s2S3infos))
                             {
                                 if (isNotOutOfMemory)
                                     s1S3infos[s1Index].Add(s3Index, true);
@@ -250,7 +262,7 @@ namespace InterleavingString
 
         private bool GetNext(int index, int[] fowardArrayIndexes, out int firstIndex)
         {
-            firstIndex = fowardArrayIndexes[index];
+            firstIndex = index < fowardArrayIndexes.Length ? fowardArrayIndexes[index] : -1;
             return firstIndex != -1;
         }
 
