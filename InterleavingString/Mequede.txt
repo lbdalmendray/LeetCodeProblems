@@ -1,0 +1,5 @@
+﻿- Liberar memoria de > s1S3infos en cada try catch 
+- Liberar memoria de > s2S3infos en cada try catch . 
+- ver que un problema en s2S3Infos para s2Index , S3Index , Length 
+Es verdadero si el mismo problema para S2Index+1 , S3Index+1 , Length-1 es Verdadero 
+y el solo el caracter del s2Index y el S3Index son iguales . 
