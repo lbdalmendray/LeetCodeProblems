@@ -284,6 +284,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candy", "Candy\Candy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandyTest", "CandyTest\CandyTest.csproj", "{9C1A4A46-8F0C-4F6C-9C4A-542612A47D23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestValidParentheses", "LongestValidParentheses\LongestValidParentheses.csproj", "{987B534C-49DC-416D-9408-2DD8FE205AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestValidParenthesesTest", "LongestValidParenthesesTest\LongestValidParenthesesTest.csproj", "{6E9ECBFC-4C20-4397-95E2-5E998B473BB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -818,6 +822,14 @@ Global
 		{9C1A4A46-8F0C-4F6C-9C4A-542612A47D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1A4A46-8F0C-4F6C-9C4A-542612A47D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1A4A46-8F0C-4F6C-9C4A-542612A47D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987B534C-49DC-416D-9408-2DD8FE205AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987B534C-49DC-416D-9408-2DD8FE205AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987B534C-49DC-416D-9408-2DD8FE205AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987B534C-49DC-416D-9408-2DD8FE205AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9ECBFC-4C20-4397-95E2-5E998B473BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9ECBFC-4C20-4397-95E2-5E998B473BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9ECBFC-4C20-4397-95E2-5E998B473BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9ECBFC-4C20-4397-95E2-5E998B473BB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -883,6 +895,7 @@ Global
 		{AFFA7291-68E1-405C-8192-B47ED3DF6DCB} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{DB90124C-9E71-44C4-B7EF-B8F736C75CE9} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{9C1A4A46-8F0C-4F6C-9C4A-542612A47D23} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
+		{6E9ECBFC-4C20-4397-95E2-5E998B473BB6} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}

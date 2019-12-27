@@ -1,0 +1,10 @@
+﻿Idea :
+
+The longest Valid Parentheses is the longest for each of the longest Valid parentheses that start at each index of the input string.
+
+Then the new problem is what is the longest Valid Parentheses that start at index i ? ( i = 0, ..., s.Length-1).
+
+The array solutions has all the solutions for each index . 
+And A solution in Solutions[i] could depend of the Solutions[i+1] . The code explains the idea intuitively.
+At the end of the algorithm
+Solutions[i] == 0 tell us that there is no valid parentheses that starts at the index i .  
