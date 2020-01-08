@@ -26,6 +26,18 @@ namespace DecodeWaysII
             return (int)(solutions[0]);
         }
 
+        private bool ExistZeroInValid(string s)
+        {
+            if (s[0] == '0')
+                return true;
+            for (int i = 1; i < s.Length; i++)
+            {
+                if (s[i] == '0' && (s[i - 1] > '2' || s[i-1] =='0'))
+                    return true;
+            }
+            return false;
+        }
+
         private ulong NumDecodings(int index, ulong[] solutions, string s)
         {
             ulong result = 0;
