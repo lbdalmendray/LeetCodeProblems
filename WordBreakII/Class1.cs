@@ -64,9 +64,9 @@ namespace WordBreakII
                 {
                     firstNode.Add(item, 0);
                 }
-                
+
             }
-            catch(System.OutOfMemoryException e)
+            catch (System.OutOfMemoryException e)
             {
                 firstNode = new MyContLinkedNode();
                 foreach (var item in wordDict)
@@ -81,7 +81,7 @@ namespace WordBreakII
             LinkedList<int> result = new LinkedList<int>();
             var node = firstNode;
 
-            while(firstIndex < stringValue.Length && node != null)
+            while (firstIndex < stringValue.Length && node != null)
             {
                 if (node.HasChar(stringValue[firstIndex], out node))
                 {
@@ -93,6 +93,13 @@ namespace WordBreakII
 
             return result;
         }
+
+        public static int GetValue(char character)
+        {
+            if (character < 'a')
+                return character - 'A';
+            return 26 + character - 'a';
+        }
     }
 
     public interface IMyContainerNode
@@ -101,13 +108,11 @@ namespace WordBreakII
         bool HasChar(char charValue, out IMyContainerNode node);
 
         void Add(string stringValue, int index);
-
-
     }
 
     public class MyContArrayNode : IMyContainerNode
     {
-        public MyContArrayNode[] charValues = new MyContArrayNode[26];
+        public MyContArrayNode[] charValues = new MyContArrayNode[52];
         public bool IsWord { get ; protected set ; }
 
         public void Add(string stringValue, int index)
@@ -116,17 +121,17 @@ namespace WordBreakII
                 IsWord = true;
             else
             {
-                if( charValues[stringValue[index]-'a'] == null)
+                if( charValues[MyContainer.GetValue( stringValue[index])] == null)
                 {
-                    charValues[stringValue[index] - 'a'] = new MyContArrayNode();
+                    charValues[MyContainer.GetValue(stringValue[index])] = new MyContArrayNode();
                 }
-                charValues[stringValue[index] - 'a'].Add(stringValue, index + 1);
+                charValues[MyContainer.GetValue(stringValue[index])].Add(stringValue, index + 1);
             }
         }
 
         public bool HasChar(char charValue, out IMyContainerNode node)
         {
-            node = charValues[charValue - 'a'];
+            node = charValues[MyContainer.GetValue(charValue)];
             return node != null;
         }
     }
