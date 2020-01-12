@@ -10,6 +10,58 @@ namespace DivideArrayinSetsofKConsecutiveNumbers
     {
         public bool IsPossibleDivide(int[] nums, int k)
         {
+            if (k == 1)
+                return true;
+
+            if (nums.Length % k != 0)
+                return false;
+
+            Dictionary<int, int[]> dic = new Dictionary<int, int[]>(nums.Length);
+            foreach (var item in nums)
+            {
+                
+                if (!dic.TryGetValue(item,out var currentArray))
+                {
+                    dic.Add(item, new int[] { 1 });
+                }
+                else
+                    currentArray[0]++;
+            }
+
+            var keyValues = dic.ToArray();
+            Array.Sort(keyValues.Select(e => e.Key).ToArray(), keyValues);
+            int minimumIndex = 0;
+            while(true)
+            {
+                for (; minimumIndex < keyValues.Length; minimumIndex++)
+                {
+                    if (keyValues[minimumIndex].Value[0] != 0)
+                        break;
+                }
+                if (minimumIndex == keyValues.Length)
+                    break;
+
+                var currentMinimum = keyValues[minimumIndex].Key;
+                keyValues[minimumIndex].Value[0]--;
+
+                if (k > 1)
+                {
+                    var lastSetValue = currentMinimum + k - 1;
+                    for (int i = currentMinimum + 1; i <= lastSetValue; i++)
+                    {
+                        if (!dic.TryGetValue(i, out var currentArray))
+                            return false;
+                        if (currentArray[0] == 0)
+                            return false;
+                        currentArray[0]--;
+                    }
+                }
+            }
+
+            return true;
+        }
+        public bool IsPossibleDivide1(int[] nums, int k)
+        {
             if (nums.Length % k != 0)
                 return false;
             Array.Sort(nums);
