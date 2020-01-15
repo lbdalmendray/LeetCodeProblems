@@ -65,49 +65,5 @@ namespace MinimumInsertionStepstoMakeaStringPalindromeTest
             Assert.AreEqual(result, 280);
         }
 
-        [TestMethod]
-        public void TestPalindromeMethod1()
-        {
-            Solution s = new Solution();
-            var result = s.GetBestPalindromeSequence("abcddcba");
-            Assert.AreEqual(result.Length, 4);
-        }
-
-        [TestMethod]
-        public void TestPalindromeMethod2()
-        {
-            Solution s = new Solution();
-            int count = 2;
-            LinkedList<char> list = new LinkedList<char>();
-            list.AddFirst('a');
-            list.AddLast('a');
-            foreach (var item in "bcdefghijklmnopqrstuv")
-            {
-                list.AddFirst(item);
-                list.AddLast(item);
-                var result = s.GetBestPalindromeSequence(new string(list.ToArray()));
-                Assert.AreEqual(result.Length, count);
-                count++;
-            }            
-        }
-
-        [TestMethod]
-        public void TestPalindromeMethod3()
-        {
-            Solution s = new Solution();
-            int count = 2;
-            LinkedList<char> list = new LinkedList<char>();
-            list.AddFirst('a');
-            list.AddLast('a');
-            foreach (var item in "bcdefg")
-            {
-                list.AddFirst(item);
-                list.AddLast(count.ToString()[0]);
-                list.AddLast(item);
-                var result = s.GetBestPalindromeSequence(new string(list.ToArray()));
-                Assert.AreEqual(result.Length, count);
-                count++;
-            }
-        }
     }
 }
