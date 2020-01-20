@@ -22,7 +22,7 @@ namespace DivideArrayinSetsofKConsecutiveNumbers
                 
                 if (!dic.TryGetValue(item,out var currentArray))
                 {
-                    dic.Add(item, new int[] { 1 });
+                    dic.Add(item, new int[] { 1 }); /// the value is an array (int[]) because after each of the keyValues could not change the Value property. 
                 }
                 else
                     currentArray[0]++;
