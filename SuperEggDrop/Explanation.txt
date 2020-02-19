@@ -1,4 +1,6 @@
 ﻿Explanation of My Solution : 
+Symbols :
+=> : Implies 
 
 P(K,N) : Solution to the Problem with K eggs and N floors 
 --- ( Originally N>=1 , but I use the N>=2 , because for me the 0 floor is important and at least any cut has 
@@ -50,6 +52,30 @@ knowing that  P(K,N - i ) <= P(K,N+1 - i) then
 
 P(K,N)<= P(K,N+1)  => K=M does not exist . 
 
+Corollary 2:
+-----------
+delta > 0
+delta is integer
+P(K,N) <= P(K, N+ delta)
+
+Proof:
+
+Mathematical Induction base on delta 
+
+case delta = 1
+P(K,N) <= P(K,N+delta) --- Theorem 2
+
+show that 
+( P(K,N) <= P(K,N+M) ) => P(K,N) <= P(K,N+(M+1))
+
+P(K,N+M) <= P(K,N+(M+1) --- Theorem 2 
+P(K,N) <= P(K,N+M) ^ P(K,N+M) <= P(K,N+(M+1) => P(K,N) <= P(K,N+(M+1)
+
+Knowing that ( P(K,N) <= P(K,N+M) ) => P(K,N) <= P(K,N+(M+1))
+and P(K,N) <= P(K,N+1) 
+implies that P(K,N) <= P(K,N+delta) for delta > 0   
+
+
 Theorem 3 :
 -----------
 - P(K,N) <= P(K-1,N)
@@ -67,11 +93,83 @@ Theorem 4 :
 -----------
 
  ( P(K,N) ^ ( K >= i ) ) => P(K,N) == i
-with i is the minimum value that 2^i >= N
+with i is the minimum value that 2^i >= N 
+
+Proof:
+delta >= 0
+Mathematical Induction base on N = 2^m + delta  
+Base Case N= 2  result = 1
+
+Case N = 2^l + delta1
+SubCase delta1 >= 2 
+
+
+Theorem 5:
+----------
+
+i > j ^ max1 = max ( P(i,k) , P(j,k-1)) ^ max2 = max ( P(j,k) , P(i,k-1))   =>    max1 <= max2
 
 Proof : 
 
+Case1 :  max1 = P(i,k)
+P(j,k) <= P(i,k) -- by Corollary 2
+P(i,k) <= P(i,k-1)-- by Theorem 3
+P(j,k) <= P(i,k) <= P(i,k-1)  =>   P(i,k-1) = max2 ^ max1 <= max2
+
+Case2 :  max1 = P(j,k-1)
+P(j,k) <= P(i,k) -- by Corollary 2
+P(j,k-1) <= P(i,k-1) -- by Corollary 2
+P(j,k) <= P(i,k) <=  P(j,k-1) <= P(i,k-1)
+
+Case1 ^ Case2 => max1 <= max2 
+
+Theorem 6
+---------
+
+Solution of the problem SuperEggDrop is Min {  Max ( P(i,k) , P(N-i,k-1) )  } with i= N/2,...,N
+
+Proof : 
+
+Think that for j < N/2 Max(P(j,k), P(N-j,k-1)) is the best solution
+
+By the Theorem 5 we could say that is wrong because N-j > j because j < N/2 then is a better solution
+Max(P(i,k), P(N-i,k-1)) with i = N-j and j = N-(N-j) = N-i , i >= N/2 by Theorem 5 
 
 
+Thoerem 7
+---------
+i >=N/2 
+P(i,K) = Max ( P(i,K) , P(N-i,K-1) )  => P(i,K) = min { Max ( P(i,K) , P(N-i,K-1) ),  Max ( P(i+1,K) , P(N-i-1,K-1) ) , ... , Max ( P(N,K) , P(1,K-1) ) } 
+
+Proof :
+delta = 0,..., N-1-i
+P(i,K) <= P(i+delta,K) ---- Corolary 2
+
+P(N-i,K-1) >= P(N-i - delta ,K-1) ---- Corolary 2
+
+=> P(i+delta,K) >= P(N-i - delta ,K-1) =>  P(i+delta,K) = Max(P(i+delta,K), P(N-i - delta ,K-1) )
+
+=> P(i,K) = min { P(i+delta,K) } 
+
+
+Thoerem 8 ( Binary Search Theorem )
+---------
+
+i == N/2 
+P(N-i,K-1) = Max ( P(i,K) , P(N-i,K-1) ) => 
+[
+m = N/2 + N/4 => 
+    [
+
+    case1: P(N-m,K-1) = Max ( P(m,K) , P(N-m,K-1) )
+    => P(N-m,K-1) = min { Max ( P(i,K) , P(N-i,K-1) ) ,Max ( P(i+1,K) , P(N-i-1,K-1) ), ... , Max ( P(m,K) , P(N-m,K-1)}  
+    ( Similar Probe that Theorem 7) ( The best solution is in the interval [ N/2+N/ , N] )
+    
+    case2: P(m,K) = Max ( P(m,K) , P(N-m,K-1) )
+    => P(m,K) = min { Max ( P(m,K) , P(N-m,K-1) ) ,Max ( P(m+1,K) , P(N-m-1,K-1) ), ..., Max ( P(N-1,K) , P(1,K-1) ) }
+    ( Similar Probe that Theorem 7) ( The best solution is in the interval [ N/2 , N/2 + N/4] )
+    
+    ]
+]
 
 
