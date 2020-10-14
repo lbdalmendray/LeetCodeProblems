@@ -1,9 +1,39 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 public class Solution
 {
+    /// <summary>
+    /// O(N) Complexity Time 
+    /// O(N) Complexity Space
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <param name="target"></param>
+    /// <returns></returns>
     public int[] TwoSum(int[] nums, int target)
+    {
+        Dictionary<int, int> dict = new Dictionary<int, int>();
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int value = nums[i];
+            int diff = target - value;
+
+            if ( dict.TryGetValue(diff, out var diffIndex))
+            {
+                return new int[] { diffIndex, i };
+            }
+            else
+            {
+                if (!dict.ContainsKey(value))
+                    dict.Add(value, i);
+            }            
+        }
+
+        return new int[0];
+    }
+
+    public int[] TwoSum1(int[] nums, int target)
     {
         var valueIndexes = nums.Select((v, index) => new { v, index }).ToArray();
         Array.Sort(nums, valueIndexes);
