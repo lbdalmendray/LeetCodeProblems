@@ -19,5 +19,17 @@ namespace LetterCombinationsofaPhoneNumberTest
                 .Contains(item));
             }
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            Solution s = new Solution();
+            var result = s.LetterCombinations("7");
+            foreach (var item in result)
+            {
+                Assert.IsTrue(new string[] { "p", "q", "r", "s" }
+                .Contains(item));
+            }
+        }
     }
 }

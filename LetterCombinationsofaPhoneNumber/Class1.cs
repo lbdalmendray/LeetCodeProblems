@@ -15,13 +15,13 @@ namespace LetterCombinationsofaPhoneNumber
                 return new List<string>();
 
             LinkedList<string> result = new LinkedList<string>();
-
+            int[] max = new int[] { 0, 0, 2, 2, 2, 2, 2, 3, 2, 3 };
             char[] current = new char[digits.Length];
             int[] states = Enumerable.Repeat(-1, digits.Length).ToArray();
             int index = 0;
             while(true)
             {
-                if ( states[index]!= 2)
+                if ( states[index]!= max[index])
                 {
                     states[index]++;
                 }
