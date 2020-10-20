@@ -11,6 +11,9 @@ namespace LetterCombinationsofaPhoneNumber
     {
         public IList<string> LetterCombinations(string digits)
         {
+            if (digits.Length == 0)
+                return new List<string>();
+
             LinkedList<string> result = new LinkedList<string>();
 
             char[] current = new char[digits.Length];
