@@ -16,6 +16,8 @@ namespace FurthestBuildingYouCanReach
                 changes[i] = heights[i] - heights[i - 1];
             }
 
+            if (ladders >= heights.Length - 1)
+                return heights.Length - 1;
             if ( ladders == 0)
             {
                 for (int i = 0; i < changes.Length; i++)
@@ -27,7 +29,7 @@ namespace FurthestBuildingYouCanReach
                 }
 
                 return changes.Length - 1;
-            }
+            }            
             else
             {
                 SortedDictionary<int,int> maxChanges = new SortedDictionary<int,int>();
@@ -72,7 +74,7 @@ namespace FurthestBuildingYouCanReach
                                 maxChanges.Remove(keyValue.Key);
                             else
                             {
-                                maxChanges[keyValue.Key]--;                                
+                                maxChanges[keyValue.Key] = newValue;                                
                             }
 
                             bricks -= keyValue.Key;
