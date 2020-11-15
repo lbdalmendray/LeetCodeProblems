@@ -9,52 +9,70 @@ namespace LetterCombinationsofaPhoneNumber
 {
     public class Solution
     {
+        Node[] nodes = new Node[10]; 
+
+        public Solution()
+        {
+            var node2 = new Node { Values = "abc" };
+            var node3 = new Node { Values = "def" };
+            var node4 = new Node { Values = "ghi" };
+            var node5 = new Node { Values = "jkl" };
+            var node6 = new Node { Values = "mno" };
+            var node7 = new Node { Values = "pqrs" };
+            var node8 = new Node { Values = "tuv" };
+            var node9 = new Node { Values = "wxyz" };
+
+            nodes[2] = node2;
+            nodes[3] = node3;
+            nodes[4] = node4;
+            nodes[5] = node5;
+            nodes[6] = node6;
+            nodes[7] = node7;
+            nodes[8] = node8;
+            nodes[9] = node9;
+        }
+
         public IList<string> LetterCombinations(string digits)
         {
             if (digits.Length == 0)
                 return new List<string>();
 
-            LinkedList<string> result = new LinkedList<string>();
-            int[] max = new int[] { 0, 0, 2, 2, 2, 2, 2, 3, 2, 3 };
-            char[] current = new char[digits.Length];
-            int[] states = Enumerable.Repeat(-1, digits.Length).ToArray();
-            int index = 0;
-            while(true)
-            {
-                if ( states[index]!= max[index])
-                {
-                    states[index]++;
-                }
-                else
-                {
-                    if (index == 0)
-                        break;
-                    states[index] = -1;
-                    index--;
-                    continue;
-                }
+            List<string> result = new List<string>();
 
-                current[index] = GetChar(digits[index], states[index]);
+            Node [] nodeList = CreateNodeList(digits);
+            DFS(nodeList, 0, result, new LinkedList<char>() , digits.Length - 1);
 
-                if ( index == digits.Length-1)
-                {
-                    result.AddLast(new string(current));
-                }
-                else
-                {
-                    index++;
-                }
-            }
-
-
-            return result.ToList();
+            return result;
         }
 
-        private char GetChar(char charNumber, int index)
+        private void DFS(Node[] nodeList, int index, List<string> result, LinkedList<char> cResult, int lastIndex)
         {
-            int number = charNumber - '2';
-            int sum = number * 3 + index;
-            return (char)('a' + sum);
+            foreach (var charValue in nodeList[index].Values)
+            {
+                cResult.AddLast(charValue);
+
+                if ( index == lastIndex)
+                {
+                    result.Add(new string(cResult.ToArray()));
+                }
+                else
+                {
+                    DFS(nodeList, index + 1, result, cResult, lastIndex);
+                }
+
+                cResult.RemoveLast();
+            }            
         }
+
+        private Node[] CreateNodeList(string digits)
+        {
+            Node[] result = digits.Select(d => nodes[d - '0']).ToArray();
+            return result;
+        }
+    }
+
+    public class Node
+    {
+        public string Values { get; internal set; }
     }
 }
