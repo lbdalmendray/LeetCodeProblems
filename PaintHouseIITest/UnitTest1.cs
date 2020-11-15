@@ -18,7 +18,7 @@ namespace PaintHouseIITest
              };
 
             Solution s = new Solution();
-            var result = s.MinCost(input);
+            var result = s.MinCostII(input);
             Assert.AreEqual(result, 10);
         }
 
@@ -32,7 +32,7 @@ namespace PaintHouseIITest
              };
 
             Solution s = new Solution();
-            var result = s.MinCost(input);
+            var result = s.MinCostII(input);
             Assert.AreEqual(result, 5);
         }
     }

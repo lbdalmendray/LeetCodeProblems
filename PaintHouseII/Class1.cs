@@ -8,7 +8,7 @@ namespace PaintHouseII
 {
     public class Solution
     {
-        public int MinCost(int[][] costs)
+        public int MinCostII(int[][] costs)
         {
             if (costs == null || costs.Length == 0)
                 return 0;
