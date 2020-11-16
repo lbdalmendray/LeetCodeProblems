@@ -25,7 +25,35 @@ namespace LastSubstringinLexicographicalOrder
                     indexes.AddLast(i);
             }
 
-            LinkedList<int[]> list = new LinkedList<int[]>(indexes.Select(e => new int[] { e, e }));
+            if (value == 'a')
+                return s;
+
+            var indexesArray = indexes.ToArray();
+
+            LinkedList<int[]> list1 = new LinkedList<int[]>();
+
+            for (int i = 0; i < indexesArray.Length ; i++)
+            {
+                int j = indexesArray[i] + 1;
+                for (; j < s.Length; j++)
+                {
+                    if ( s[j] != s[indexesArray[i]])
+                    {
+                        j--;
+                        break;
+                    }
+                }
+                if (j == s.Length)
+                    j--;
+                list1.AddLast(new int[] { indexesArray[i], j });
+                i += j - indexesArray[i];
+            }
+
+            int max = list1.Max(e => e[1] - e[0]);
+            ;
+
+            //LinkedList<int[]> list = new LinkedList<int[]>(indexes.Select(e => new int[] { e, e }));
+            LinkedList<int[]> list = new LinkedList<int[]>(list1.Where(e => e[1] - e[0] == max));
 
             while(list.Count > 1)
             {
