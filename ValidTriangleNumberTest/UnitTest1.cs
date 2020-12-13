@@ -37,5 +37,13 @@ namespace ValidTriangleNumberTest
             var result = s.TriangleNumber(new int[] { 1, 1, 2, 3, 4, 5,5,5 });
             Assert.AreEqual(result, 1 + 3 + 3 + 1 + 3*(5));
         }
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            Solution s = new Solution();
+            var result = s.TriangleNumber(new int[] { 0,0 });
+            Assert.AreEqual(result, 0);
+        }
     }
 }

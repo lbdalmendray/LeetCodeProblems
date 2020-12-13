@@ -17,6 +17,9 @@ namespace ValidTriangleNumber
             int[] counter = new int[nums.Max() + 1];
             for (int i = 0; i < nums.Length; i++)
             {
+                if (nums[i] == 0)
+                    continue;
+                
                 counter[nums[i]]++;
             }
 
