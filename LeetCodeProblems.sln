@@ -606,9 +606,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FurthestBuildingYouCanReach
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LastSubstringinLexicographicalOrderTest", "LastSubstringinLexicographicalOrderTest\LastSubstringinLexicographicalOrderTest.csproj", "{F1CAA31E-9D1D-4142-B668-F8A334573466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalParserInterpretation", "GoalParserInterpretation\GoalParserInterpretation.csproj", "{7F682F28-5EC9-4A87-92D3-8F06DC88F87D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoalParserInterpretation", "GoalParserInterpretation\GoalParserInterpretation.csproj", "{7F682F28-5EC9-4A87-92D3-8F06DC88F87D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxNumberofKSumPairs", "MaxNumberofKSumPairs\MaxNumberofKSumPairs.csproj", "{328B22D1-C9B3-4D59-A643-72BDC5014E9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxNumberofKSumPairs", "MaxNumberofKSumPairs\MaxNumberofKSumPairs.csproj", "{328B22D1-C9B3-4D59-A643-72BDC5014E9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidTriangleNumber", "ValidTriangleNumber\ValidTriangleNumber.csproj", "{C9161155-16A7-4B44-A476-113FF43A8C77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidTriangleNumberTest", "ValidTriangleNumberTest\ValidTriangleNumberTest.csproj", "{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1784,6 +1788,14 @@ Global
 		{328B22D1-C9B3-4D59-A643-72BDC5014E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{328B22D1-C9B3-4D59-A643-72BDC5014E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{328B22D1-C9B3-4D59-A643-72BDC5014E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9161155-16A7-4B44-A476-113FF43A8C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9161155-16A7-4B44-A476-113FF43A8C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9161155-16A7-4B44-A476-113FF43A8C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9161155-16A7-4B44-A476-113FF43A8C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1951,6 +1963,7 @@ Global
 		{E363B2C5-0BCC-4C2F-AF97-894C83017299} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{5FEA8F39-2112-4B72-B271-4BEA9469F17F} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{F1CAA31E-9D1D-4142-B668-F8A334573466} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
+		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
