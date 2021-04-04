@@ -612,7 +612,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxNumberofKSumPairs", "Max
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidTriangleNumber", "ValidTriangleNumber\ValidTriangleNumber.csproj", "{C9161155-16A7-4B44-A476-113FF43A8C77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidTriangleNumberTest", "ValidTriangleNumberTest\ValidTriangleNumberTest.csproj", "{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidTriangleNumberTest", "ValidTriangleNumberTest\ValidTriangleNumberTest.csproj", "{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TruncateSentence", "TruncateSentence\TruncateSentence.csproj", "{11A440DC-49A8-40EB-8488-4BE7F941DFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingtheUsersActiveMinutes", "FindingtheUsersActiveMinutes\FindingtheUsersActiveMinutes.csproj", "{59178AB2-A30F-4C8F-AC7A-817A42FB75AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingtheUsersActiveMinutesTest", "FindingtheUsersActiveMinutesTest\FindingtheUsersActiveMinutesTest.csproj", "{A78AF86C-F66E-4D34-BEBC-C395639E0E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumAbsoluteSumDifference", "MinimumAbsoluteSumDifference\MinimumAbsoluteSumDifference.csproj", "{CAABAA4A-8A2E-410F-A0E6-D188BF0C1DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumAbsoluteSumDifferenceTest", "MinimumAbsoluteSumDifferenceTest\MinimumAbsoluteSumDifferenceTest.csproj", "{FFA66932-8A0B-4A24-984A-4703DA8D142B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1796,6 +1806,26 @@ Global
 		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A440DC-49A8-40EB-8488-4BE7F941DFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A440DC-49A8-40EB-8488-4BE7F941DFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A440DC-49A8-40EB-8488-4BE7F941DFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A440DC-49A8-40EB-8488-4BE7F941DFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59178AB2-A30F-4C8F-AC7A-817A42FB75AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59178AB2-A30F-4C8F-AC7A-817A42FB75AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59178AB2-A30F-4C8F-AC7A-817A42FB75AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59178AB2-A30F-4C8F-AC7A-817A42FB75AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78AF86C-F66E-4D34-BEBC-C395639E0E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78AF86C-F66E-4D34-BEBC-C395639E0E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78AF86C-F66E-4D34-BEBC-C395639E0E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78AF86C-F66E-4D34-BEBC-C395639E0E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAABAA4A-8A2E-410F-A0E6-D188BF0C1DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAABAA4A-8A2E-410F-A0E6-D188BF0C1DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAABAA4A-8A2E-410F-A0E6-D188BF0C1DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAABAA4A-8A2E-410F-A0E6-D188BF0C1DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA66932-8A0B-4A24-984A-4703DA8D142B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA66932-8A0B-4A24-984A-4703DA8D142B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA66932-8A0B-4A24-984A-4703DA8D142B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA66932-8A0B-4A24-984A-4703DA8D142B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1964,6 +1994,8 @@ Global
 		{5FEA8F39-2112-4B72-B271-4BEA9469F17F} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{F1CAA31E-9D1D-4142-B668-F8A334573466} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 		{15867CEE-6CA9-46C5-8D86-6880AE9C96BB} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
+		{A78AF86C-F66E-4D34-BEBC-C395639E0E59} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
+		{FFA66932-8A0B-4A24-984A-4703DA8D142B} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
