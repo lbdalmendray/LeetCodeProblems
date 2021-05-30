@@ -624,9 +624,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumAbsoluteSumDifferenc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumAbsoluteSumDifferenceTest", "MinimumAbsoluteSumDifferenceTest\MinimumAbsoluteSumDifferenceTest.csproj", "{FFA66932-8A0B-4A24-984A-4703DA8D142B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumPopulationYear", "MaximumPopulationYear\MaximumPopulationYear.csproj", "{DB538EFE-AD7A-4146-8776-B789A1149C55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumPopulationYear", "MaximumPopulationYear\MaximumPopulationYear.csproj", "{DB538EFE-AD7A-4146-8776-B789A1149C55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumDistanceBetweenaPairofValues", "MaximumDistanceBetweenaPairofValues\MaximumDistanceBetweenaPairofValues.csproj", "{9660D3BA-3A8C-4AAA-9021-1C0DD74C3E58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumDistanceBetweenaPairofValues", "MaximumDistanceBetweenaPairofValues\MaximumDistanceBetweenaPairofValues.csproj", "{9660D3BA-3A8C-4AAA-9021-1C0DD74C3E58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Amazon", "Amazon", "{DC11E792-FDD5-48F8-B734-5BBC40301F7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
