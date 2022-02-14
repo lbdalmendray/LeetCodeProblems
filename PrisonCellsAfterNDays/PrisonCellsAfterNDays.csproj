@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Class1.cs1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Class1.cs1" />
+  </ItemGroup>
+
+</Project>

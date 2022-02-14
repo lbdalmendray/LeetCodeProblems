@@ -1,0 +1,88 @@
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace RottingOranges
+{
+    public class Solution
+    {
+        public int OrangesRotting(int[][] grid)
+        {
+            if (grid == null || grid.Length == 0 || grid[0] == null || grid[0].Length == 0)
+                return 0;
+
+            LinkedList<int[]> freshOrangeList  = GetOrange(grid, 1);
+            if( freshOrangeList.Count == 0)
+                    return 0;
+
+            LinkedList<int[]> rottenOrangeList = GetOrange(grid, 2);
+            if ( rottenOrangeList.Count == 0)
+                return -1;
+            
+            int [,] matrix = CreateMatrix(grid.Length,grid[0].Length) ; //// -2 
+            FillMatrix(freshOrangeList,matrix, -1) ; 
+            FillMatrix(rottenOrangeList, matrix, 0);
+            
+            while(rottenOrangeList.Count != 0)
+            {
+                var first = rottenOrangeList.First.Value;
+                rottenOrangeList.RemoveFirst();
+                var value1 = matrix[first[0],first[1]];                
+                value1 ++;
+
+                List<int[]> neighborHood = GetNeighborhood(first, matrix);
+                
+                foreach( var element in neighborHood.Where(e=>matrix[e[0],e[1]]==-1))
+                {
+                    matrix[element[0], element[1]] = value1 ; 
+                    rottenOrangeList.AddLast(element);
+                }
+            }
+
+            int result = 0;            
+
+            foreach ( var element in freshOrangeList)
+            {
+                if ( matrix[element[0],element[1]] == -1 )
+                    return -1;
+                result = Math.Max(result, matrix[element[0],element[1]]);
+            }
+            
+            return result;
+
+        }
+
+        LinkedList<int[]>  GetOrange( int[][] grid, int value)
+        {
+            LinkedList<int[]> result = new LinkedList<int[]>();
+            for(int i = 0 ; i < grid.Length ; i++ )
+            {
+                for ( j = 0 ; j < grid[i].Length ; i++ )
+                {
+                    if( grid[i][j] == value )
+                    {
+                        result.AddLast(new int[]{ i , j }) ;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        List<int[]> GetNeighborhood(int [] first, int [,] matrix)
+        {
+            List<int[]> result = new List<int[]>();
+                
+            if ( first[0] > 0)
+                 result.Add(new int[]{ first[0]-1 , first[1]});
+            if ( first[0] < matrix.GetLength(0)-1)
+                 result.Add(new int[]{ first[0] + 1 , first[1]});
+            if ( first[1] > 0)
+                 result.Add(new int[]{ first[0] , first[1]-1});
+            if ( first[1] < matrix.GetLength(1)-1)
+                 result.Add(new int[]{ first[0] , first[1] + 1});
+    
+            return result;
+        }
+    }
+}

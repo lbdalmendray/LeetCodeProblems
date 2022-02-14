@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PartitionLabels
+{
+    public class Solution2
+    {
+        public IList<int> PartitionLabels(string s)
+        {
+            List<int> result = new List<int>();
+            int[][] indexes = new int['z'-'a'+1][];
+            for( int i = 0 ; i < s.Length ; i++ )
+            {
+                if ( indexes[Index[s[i]]] == null )
+                {
+                    var newArray = new int[2];
+                    newArray[0] = i;
+                    indexes[Index[s[i]]] = newArray;
+                }
+                
+                indexes[Index[s[i]]][1] = i;
+            }
+            
+            var part = GetPart(0, indexes);
+            result.Add(part[1] - part[0] + 1);
+            while( part[1] < s.Length - 1)
+            {
+                part = GetPart(part[1]+1, indexes , s);
+                result.Add(part[1] - part[0] + 1);
+            }
+            return result;
+        }
+        int [] GetPart(int firstIndex, indexes, string s)
+        {
+            var indexesValue = indexes[Index[s[firstIndex]]];
+            int [] result = new int[2]{ indexesValue[0], indexesValue[1] };
+            
+            for( int i = result[0] + 1 ; i < result[1] ; i++ )
+            {
+                var indexesValue = indexes[Index[s[i]]];
+                result[1] = Math.Max(indexesValue[1], result[1]);
+            }
+            return result;
+        }
+        int Index(char charValue)
+        {
+            return charValue - 'z' + 1 ;
+        }        
+    }
+}

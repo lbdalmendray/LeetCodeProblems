@@ -1,0 +1,88 @@
+﻿Problem:
+-------------------------------------------------------
+1041. Robot Bounded In Circle
+Medium
+
+1298
+
+361
+
+Add to List
+
+Share
+On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions:
+
+"G": go straight 1 unit;
+"L": turn 90 degrees to the left;
+"R": turn 90 degrees to the right.
+The robot performs the instructions given in order, and repeats them forever.
+
+Return true if and only if there exists a circle in the plane such that the robot never leaves the circle.
+-----------------------------------------------------------------------
+
+My Solution Explanation : 
+-------------------------
+
+My idea :
+It does not matter how many instructions we have . What it matter is that when you execute all 
+the instructions you will get a new position (possibly different from the (0,0)) and new Direction.
+If we calculate that new state = ( position and Direction ),What are the cases to solve :
+
+case1 : positon == (0,0) That means that all the operation will not change my position never , that 
+means that all the circles with radio > 0 will have inside forever the robot .
+
+case2 : Direction == Up and position != (0,0) that means that we will be changing forever the position 
+with the same value . Imaging that we change the position with deltaChanging value
+(dx,dy) , and because the new Direction is the same as the initial Direction that is Up , we will change 
+the position with the same (dx,dy) value producing a new position (dx+dx,dy+dy) . When we repeat this
+n times we will have a new position ( n*dx, n*dy) . If we think that exist a Circle with radio R that will
+have ever the Robot there that is false , because we always could find a n = n0 that n*dx > R || n*dy > R 
+
+case 3 : Direction == Right and position != (0,0) , Basically, what we have to show is that we are moving
+in 4 steps , and the Robot will always return to the (0,0) and another way to show is that the Robot will be 
+moving in an Square shape path . My math formulas explanation is this one :
+
+Think that we have a general position (x,y) and we apply the instruccions then we obtain a delta position
+and a new Direction . 
+
+To calculate the delta position we have a function Delta(x,y) = ( x + dx , y + dy ) with dx > 0 || dy > 0 and constants values 
+For the next step we have a new Direction an our new movement will be related to this Direction .
+We will try to see this new state as the original Direction = Up . we can find a transformation matrix that change 
+this new position and direction to equivalent with Direction == Up again .
+To calculate the transformation we have a function Trans(x,y) = (-y , x) . This transformation means what we do 
+if we try to see the Right direction as the Up direction that is that every x value in Up direction will be an y value for 
+the Right direction and every y value with Up direction will be -x value that is the same to say that every -y value in Up will be the 
+x positive value for Right . 
+
+With this information , we can find a simple function that calculate a Delta and then transform Right values 
+to Up values . Lets call this function F(x,y) , 
+then
+F(x,y) = Trans(Delta(x,y)) 
+F(x,y) = Trans(x+dx , y + dy )  
+------------------------------
+| F(x,y) = (-y - dy, x + dx) |
+------------------------------
+
+Lets apply this 4 times to any point (x,y)
+Step1
+ F(x,y) = (-y- dy , x + dx )
+Step2
+ F(-y-dy, x + dx) = ( - x - dx - dy , -y - dy + dx )
+Step3
+ F( - x - dx - dy , -y - dy + dx ) = ( y + dy - dx - dy , - x - dx - dy + dx ) 
+= ( y - dx , - x - dy )
+Step4
+ F( y - dx , - x - dy ) = ( x + dy - dy , y - dx + dx  )
+= ( x , y) 
+It shows that we return to the same point with 4 steps . Then knowing that this amount of instructions
+in 4 steps is finite then the distance obtained is finite, lets call this distance d . Then any circle with radio 
+r > d , with center (0,0) will have this robot inside . 
+
+
+
+ 
+
+
+
+
+
