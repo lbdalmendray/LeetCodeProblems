@@ -78,11 +78,29 @@ It shows that we return to the same point with 4 steps . Then knowing that this 
 in 4 steps is finite then the distance obtained is finite, lets call this distance d . Then any circle with radio 
 r > d , with center (0,0) will have this robot inside . 
 
+--------------------------------------------------------------------------------
 
+Another explanation for the 4 times changing point (x,y)
 
- 
+position (x,y) = (0,0)
 
+		------------------->B ------------------->A
+		A										  |
+		^										  |
+		|										  |
+		|										  |
+		|										  |
+		|										  |
+		|										  |
+		|										  \/
+(0,0)	|										  B
+		B										  |
+ 		^										  |
+		|										  |
+		|										  |
+		|										  |
+		|										  \/
+        A<----------------------B-----------------A
 
-
-
-
+		Y = A - B - A + B = 0
+		X = B + A - B - A = 0
