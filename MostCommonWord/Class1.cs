@@ -10,7 +10,7 @@ namespace MostCommonWord
         {
             HashSet<char> symbols = new HashSet<char>("!?',;.");
 
-            paragraph = new string(paragraph.Where(c=>!symbols.Contains(c)).ToArray());
+            paragraph = new string(paragraph.Select(e=>symbols.Contains(e)?' ':e).ToArray()) ;
             paragraph = paragraph.ToLower();
 
             HashSet<string> bannedHashSet = new HashSet<string>(banned);

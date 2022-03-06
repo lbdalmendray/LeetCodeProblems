@@ -26,5 +26,24 @@ namespace MostCommonWordTest
 
             Assert.AreEqual("a", result);
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            Solution solution = new Solution();
+            var result = solution.MostCommonWord("Lion's family can be together. Lion is an animal."
+                , new string[] { });
+
+            Assert.AreEqual("lion", result);
+        }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            Solution solution = new Solution();
+            var result = solution.MostCommonWord("I bougth some things like pencils,papers and pens. Pencils are very useful", new string[] { });
+
+            Assert.AreEqual("pencils", result);
+        }
     }
 }
