@@ -692,6 +692,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumPointsinanArcheryCom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumPointsinanArcheryCompetitionTest", "MaximumPointsinanArcheryCompetitionTest\MaximumPointsinanArcheryCompetitionTest.csproj", "{3D34C1ED-9AEA-416B-B46F-E5F1F2F8EEE5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestSubstringofOneRepeatingCharacter", "LongestSubstringofOneRepeatingCharacter\LongestSubstringofOneRepeatingCharacter.csproj", "{39F6F25A-5F80-4E0E-BFF7-C20DFCF0D4A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubstringofOneRepeatingCharacterTest", "LongestSubstringofOneRepeatingCharacterTest\LongestSubstringofOneRepeatingCharacterTest.csproj", "{16E1415F-17AD-41B2-962B-249987323D95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2026,6 +2030,14 @@ Global
 		{3D34C1ED-9AEA-416B-B46F-E5F1F2F8EEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D34C1ED-9AEA-416B-B46F-E5F1F2F8EEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D34C1ED-9AEA-416B-B46F-E5F1F2F8EEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F6F25A-5F80-4E0E-BFF7-C20DFCF0D4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F6F25A-5F80-4E0E-BFF7-C20DFCF0D4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F6F25A-5F80-4E0E-BFF7-C20DFCF0D4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F6F25A-5F80-4E0E-BFF7-C20DFCF0D4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E1415F-17AD-41B2-962B-249987323D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E1415F-17AD-41B2-962B-249987323D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E1415F-17AD-41B2-962B-249987323D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E1415F-17AD-41B2-962B-249987323D95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
