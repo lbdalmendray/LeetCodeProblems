@@ -122,6 +122,69 @@ namespace LongestSubstringofOneRepeatingCharacter
                 }
             }
         }
+
+        public int GetMax(int index1, int index2)
+        {
+            if (!(index1 <= index2 && 0 <= index1
+                && index2 <= CharArray.Length - 1))
+                return -1;
+
+            if (Nodes.Length == 1)
+            {
+                if (index1 == index2 && index1 == Nodes[0].LeftIndex1)
+                {
+                    return 1;
+                }
+                else
+                    return -1;
+            }
+            else
+            {
+                var result = GetMaxNode(index1, index2, 0);
+                return result.Max;
+            }
+        }
+
+        private Node GetMaxNode(int index1, int index2, int nodeIndex)
+        {
+            if (index1 > index2)
+                return null;
+
+            Node node = Nodes[nodeIndex];
+            if (index1 == node.LeftIndex1 && index2 == node.RightIndex2)
+            {
+                return node;
+            }
+            else
+            {
+                int midIndex = (node.LeftIndex1 + node.RightIndex2) / 2;
+                if (index1 <= midIndex && midIndex <= index2)
+                {
+                    var node1 = GetMaxNode(index1, midIndex, nodeIndex * 2 + 1);
+                    var node2 = GetMaxNode(midIndex + 1, index2, nodeIndex * 2 + 2);
+                    if (node1 == null)
+                        return node2;
+                    else if (node2 == null)
+                        return node1;
+                    else
+                    {
+                        var result = new Node();
+                        ReCalculateNode(result, node1, node2);
+                        return result;
+                    }
+                }
+                else if (midIndex < index1)
+                {
+                    var node2 = GetMaxNode(index1, index2, nodeIndex * 2 + 2);
+                    return node2;
+                }
+                else
+                {
+                    var node1 = GetMaxNode(index1, index2, nodeIndex * 2 + 1);
+                    return node1;
+                }
+            }
+        }
     }
 
     public class Node
