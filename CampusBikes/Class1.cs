@@ -47,7 +47,7 @@ namespace CampusBikes
                 infoResult.Add(info);
             }
 
-            int[] result = new int[bikes.Length];
+            int[] result = new int[workers.Length];
 
             foreach (var item in infoResult)
                 result[item.WorkerIndex] = item.BikeIndex;
