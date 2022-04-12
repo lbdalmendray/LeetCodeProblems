@@ -708,9 +708,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniqueWordAbbreviationTest"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatedStringMatchTest", "RepeatedStringMatchTest\RepeatedStringMatchTest.csproj", "{3B6D2EA3-6246-4FCC-BCFA-8B0B169EA378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotRoomCleaner", "RobotRoomCleaner\RobotRoomCleaner.csproj", "{40A2BD6C-9B40-4ED4-AC76-5E7966CF815D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotRoomCleaner", "RobotRoomCleaner\RobotRoomCleaner.csproj", "{40A2BD6C-9B40-4ED4-AC76-5E7966CF815D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotRoomCleanerTest", "RobotRoomCleanerTest\RobotRoomCleanerTest.csproj", "{1B1C4B40-FBBE-495D-A79A-E1403220863A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotRoomCleanerTest", "RobotRoomCleanerTest\RobotRoomCleanerTest.csproj", "{1B1C4B40-FBBE-495D-A79A-E1403220863A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringTransformsIntoAnotherString", "StringTransformsIntoAnotherString\StringTransformsIntoAnotherString.csproj", "{7AD7A5A0-811F-467E-BF7E-6919C6F87FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringTransformsIntoAnotherStringTest", "StringTransformsIntoAnotherStringTest\StringTransformsIntoAnotherStringTest.csproj", "{7070E6D6-3936-4FC2-BCB1-15334DFDA23B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2086,6 +2090,14 @@ Global
 		{1B1C4B40-FBBE-495D-A79A-E1403220863A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B1C4B40-FBBE-495D-A79A-E1403220863A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B1C4B40-FBBE-495D-A79A-E1403220863A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD7A5A0-811F-467E-BF7E-6919C6F87FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD7A5A0-811F-467E-BF7E-6919C6F87FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD7A5A0-811F-467E-BF7E-6919C6F87FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD7A5A0-811F-467E-BF7E-6919C6F87FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7070E6D6-3936-4FC2-BCB1-15334DFDA23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7070E6D6-3936-4FC2-BCB1-15334DFDA23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7070E6D6-3936-4FC2-BCB1-15334DFDA23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7070E6D6-3936-4FC2-BCB1-15334DFDA23B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2287,6 +2299,8 @@ Global
 		{3B6D2EA3-6246-4FCC-BCFA-8B0B169EA378} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 		{40A2BD6C-9B40-4ED4-AC76-5E7966CF815D} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 		{1B1C4B40-FBBE-495D-A79A-E1403220863A} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
+		{7AD7A5A0-811F-467E-BF7E-6919C6F87FAF} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
+		{7070E6D6-3936-4FC2-BCB1-15334DFDA23B} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
