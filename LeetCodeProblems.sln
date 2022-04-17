@@ -716,9 +716,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringTransformsIntoAnother
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringTransformsIntoAnotherStringTest", "StringTransformsIntoAnotherStringTest\StringTransformsIntoAnotherStringTest.csproj", "{7070E6D6-3936-4FC2-BCB1-15334DFDA23B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddEvenJump", "OddEvenJump\OddEvenJump.csproj", "{5E977470-3FE9-435F-8DFB-0E8816C744AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OddEvenJump", "OddEvenJump\OddEvenJump.csproj", "{5E977470-3FE9-435F-8DFB-0E8816C744AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddEvenJumpTest", "OddEvenJumpTest\OddEvenJumpTest.csproj", "{6047DD2F-7231-40E6-95E3-4CADF9BD7571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OddEvenJumpTest", "OddEvenJumpTest\OddEvenJumpTest.csproj", "{6047DD2F-7231-40E6-95E3-4CADF9BD7571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerRateLimiter", "LoggerRateLimiter\LoggerRateLimiter.csproj", "{400629B9-824F-4D24-9130-10517A6EABCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2110,6 +2112,10 @@ Global
 		{6047DD2F-7231-40E6-95E3-4CADF9BD7571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6047DD2F-7231-40E6-95E3-4CADF9BD7571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6047DD2F-7231-40E6-95E3-4CADF9BD7571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400629B9-824F-4D24-9130-10517A6EABCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400629B9-824F-4D24-9130-10517A6EABCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400629B9-824F-4D24-9130-10517A6EABCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400629B9-824F-4D24-9130-10517A6EABCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2315,6 +2321,7 @@ Global
 		{7070E6D6-3936-4FC2-BCB1-15334DFDA23B} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 		{5E977470-3FE9-435F-8DFB-0E8816C744AF} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 		{6047DD2F-7231-40E6-95E3-4CADF9BD7571} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
+		{400629B9-824F-4D24-9130-10517A6EABCF} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
