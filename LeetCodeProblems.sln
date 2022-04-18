@@ -726,6 +726,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluateDivision", "Evaluat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluateDivisionTest", "EvaluateDivisionTest\EvaluateDivisionTest.csproj", "{C2F3FFEA-18ED-41CF-A26F-8246E93A0622}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressiveWords", "ExpressiveWords\ExpressiveWords.csproj", "{289443AD-6154-464A-AEF5-E27AF22711C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressiveWordsTest", "ExpressiveWordsTest\ExpressiveWordsTest.csproj", "{111E0612-2062-4C3B-8B3D-878660F1ECE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2128,6 +2132,14 @@ Global
 		{C2F3FFEA-18ED-41CF-A26F-8246E93A0622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2F3FFEA-18ED-41CF-A26F-8246E93A0622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2F3FFEA-18ED-41CF-A26F-8246E93A0622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289443AD-6154-464A-AEF5-E27AF22711C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289443AD-6154-464A-AEF5-E27AF22711C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289443AD-6154-464A-AEF5-E27AF22711C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289443AD-6154-464A-AEF5-E27AF22711C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{111E0612-2062-4C3B-8B3D-878660F1ECE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{111E0612-2062-4C3B-8B3D-878660F1ECE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{111E0612-2062-4C3B-8B3D-878660F1ECE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{111E0612-2062-4C3B-8B3D-878660F1ECE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2336,6 +2348,8 @@ Global
 		{400629B9-824F-4D24-9130-10517A6EABCF} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 		{E626C7BC-55DB-4E0E-8D0B-53BCC25A9F59} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 		{C2F3FFEA-18ED-41CF-A26F-8246E93A0622} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
+		{289443AD-6154-464A-AEF5-E27AF22711C3} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
+		{111E0612-2062-4C3B-8B3D-878660F1ECE8} = {C7E03262-D09B-4C9A-BF9E-6A7885F21AD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
