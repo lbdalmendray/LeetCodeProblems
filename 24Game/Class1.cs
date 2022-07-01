@@ -118,7 +118,8 @@ namespace _24Game
                             if (wrongOperation)
                                 continue;
 
-                            if (((double)formula.First.Value) == 24.0)
+                            var result = ((double)formula.First.Value);
+                            if (Math.Abs(result - 24.0 ) <=  0.0000000000001d )
                             {
                                 return true;
                             }

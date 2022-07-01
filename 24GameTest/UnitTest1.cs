@@ -27,6 +27,15 @@ namespace _24GameTest
         }
 
         [TestMethod]
+        public void TestMethod3()
+        {
+            Solution solution = new Solution();
+            int[] input = new int[] { 3,3,8,8 };
+            var result = solution.JudgePoint24(input);
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
         public void TestMethodAll()
         {
             Solution solution = new Solution();
