@@ -19,43 +19,41 @@ namespace LongestStringChain
 
             foreach (var word in wordSet)
             {
-                if (!solutions.TryGetValue(word, out var solValue))
-                {
-                    solValue = Solve(word, solutions, wordSet);
-                    solutions[word] = solValue;
-                }
-
+                var solValue = Solve(word, solutions, wordSet);
                 result = Math.Max(result, solValue);
             }
 
-
             return result;
-
         }
 
         private int Solve(string word, Dictionary<string, int> solutions, HashSet<string> wordSet)
         {
-            if (word.Length < 2)
+            if (solutions.TryGetValue(word, out var solValue))
             {
-                solutions[word] = word.Length;
-                return word.Length;
+                return solValue;
+            }
+            else if (word.Length < 2)
+            {
+                solValue = word.Length;
             }
             else
             {
-                int result = 1;
+                solValue = 0;
                 for (int i = 0; i < word.Length; i++)
                 {
                     var predecesor = word.Remove(i, 1);
                     if (wordSet.Contains(predecesor))
                     {
                         int cResult = Solve(predecesor, solutions, wordSet);
-                        cResult++;
-                        result = Math.Max(result, cResult);
+                        solValue = Math.Max(solValue, cResult);
                     }
                 }
 
-                return result;
+                solValue++;                
             }
+
+            solutions[word] = solValue;
+            return solValue;
         }
     }
 }
