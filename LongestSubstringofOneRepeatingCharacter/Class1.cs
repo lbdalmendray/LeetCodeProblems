@@ -20,7 +20,9 @@ namespace LongestSubstringofOneRepeatingCharacter
             return result;
         }        
     }
-
+    /// <summary>
+    /// Segment Tree
+    /// </summary>
     public class Tree
     {
         public char[] CharArray;

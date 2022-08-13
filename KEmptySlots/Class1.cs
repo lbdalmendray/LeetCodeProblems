@@ -5,6 +5,12 @@ namespace KEmptySlots
 {
     public class Solution
     {
+        /// <summary>
+        /// O(N)
+        /// </summary>
+        /// <param name="bulbs"></param>
+        /// <param name="k"></param>
+        /// <returns></returns>
         public int KEmptySlots(int[] bulbs, int k)
         {
             bool existResult = false;
