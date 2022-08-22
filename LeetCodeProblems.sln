@@ -748,9 +748,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumofSubarrayRangesTest", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "New", "New", "{8BC33648-E229-4EB6-9EA7-5A2FE0E5724A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximalSquare", "MaximalSquare\MaximalSquare.csproj", "{583D46BF-3CBF-4470-94FD-66D8BA1F54F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalSquare", "MaximalSquare\MaximalSquare.csproj", "{583D46BF-3CBF-4470-94FD-66D8BA1F54F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximalSquareTest", "MaximalSquareTest\MaximalSquareTest.csproj", "{D924D1E6-6F80-4A1F-9466-30C433DB169B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalSquareTest", "MaximalSquareTest\MaximalSquareTest.csproj", "{D924D1E6-6F80-4A1F-9466-30C433DB169B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberofProvinces", "NumberofProvinces\NumberofProvinces.csproj", "{2E445AE4-8E18-4888-9123-0C513FFDD4DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberofProvincesTest", "NumberofProvincesTest\NumberofProvincesTest.csproj", "{143160D6-D7F5-4361-8AF4-7B940A229020}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2202,6 +2206,14 @@ Global
 		{D924D1E6-6F80-4A1F-9466-30C433DB169B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D924D1E6-6F80-4A1F-9466-30C433DB169B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D924D1E6-6F80-4A1F-9466-30C433DB169B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E445AE4-8E18-4888-9123-0C513FFDD4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E445AE4-8E18-4888-9123-0C513FFDD4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E445AE4-8E18-4888-9123-0C513FFDD4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E445AE4-8E18-4888-9123-0C513FFDD4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143160D6-D7F5-4361-8AF4-7B940A229020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143160D6-D7F5-4361-8AF4-7B940A229020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143160D6-D7F5-4361-8AF4-7B940A229020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143160D6-D7F5-4361-8AF4-7B940A229020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2423,6 +2435,8 @@ Global
 		{8BC33648-E229-4EB6-9EA7-5A2FE0E5724A} = {DC11E792-FDD5-48F8-B734-5BBC40301F7A}
 		{583D46BF-3CBF-4470-94FD-66D8BA1F54F1} = {8BC33648-E229-4EB6-9EA7-5A2FE0E5724A}
 		{D924D1E6-6F80-4A1F-9466-30C433DB169B} = {8BC33648-E229-4EB6-9EA7-5A2FE0E5724A}
+		{2E445AE4-8E18-4888-9123-0C513FFDD4DF} = {8BC33648-E229-4EB6-9EA7-5A2FE0E5724A}
+		{143160D6-D7F5-4361-8AF4-7B940A229020} = {8BC33648-E229-4EB6-9EA7-5A2FE0E5724A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}

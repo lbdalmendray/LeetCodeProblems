@@ -7,7 +7,7 @@
             long result = 0;
             //// substracting smallest values
             result += SubArrayRanges(A, (a, b) => a > b, (a) => -a);
-            //// substracting smallest values
+            //// substracting biggest values
             result += SubArrayRanges(A, (a, b) => a < b, (a) => a);
             return result;
         }
