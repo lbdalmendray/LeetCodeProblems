@@ -5,14 +5,24 @@
         public long SubArrayRanges(int[] A)
         {
             long result = 0;
+            //// substracting smallest values
+            result += SubArrayRanges(A, (a, b) => a > b, (a) => -a);
+            //// substracting smallest values
+            result += SubArrayRanges(A, (a, b) => a < b, (a) => a);
+            return result;
+        }
+
+        private long SubArrayRanges(int[] A, Func<int,int, bool> compareOp, Func<long,long> addOp)
+        {
+            long result = 0;
             LinkedList<int> indexes = new LinkedList<int>();
             indexes.AddLast(-1);
             indexes.AddLast(0);
             for (int i = 1; i <= A.Length; i++)
             {
-                while (indexes.Count> 1 &&
-                    (i < A.Length ? 
-                    A[indexes.Last.Value] > A[i]
+                while (indexes.Count > 1 &&
+                    (i < A.Length ?
+                    compareOp(A[indexes.Last.Value] , A[i])
                     : true))
                 {
                     var midIndex = indexes.Last.Value;
@@ -20,34 +30,14 @@
                     indexes.RemoveLast();
 
                     var firstIndex = indexes.Last.Value;
-                    result -= midValue * (i - midIndex) * (midIndex - firstIndex);
-                }
-                indexes.AddLast(i);
-            }
-
-            indexes = new LinkedList<int>();
-            indexes.AddLast(-1);
-            indexes.AddLast(0);
-
-            for (int i = 1; i <= A.Length; i++)
-            {
-                while (indexes.Count > 1 &&
-                    (i < A.Length ?
-                    A[indexes.Last.Value] < A[i]
-                    : true))
-                {
-                    var midIndex = indexes.Last.Value;
-                    var midValue = IndexMinAt(A,midIndex);
-                    indexes.RemoveLast();
-
-                    var firstIndex = indexes.Last.Value;
-                    result += midValue * (i - midIndex) * (midIndex - firstIndex);
+                    result += addOp(midValue * (i - midIndex) * (midIndex - firstIndex));
                 }
                 indexes.AddLast(i);
             }
 
             return result;
         }
+
         public int IndexMinAt(int [] A, int index)
         {
             if (index == -1)
