@@ -1,4 +1,6 @@
-﻿namespace SumofSubarrayRanges
+﻿using System.Numerics;
+
+namespace SumofSubarrayRanges
 {
     public class Solution
     {
@@ -12,7 +14,7 @@
             return result;
         }
 
-        private long SubArrayRanges(int[] A, Func<int,int, bool> compareOp, Func<long,long> addOp)
+        private long SubArrayRanges(int[] A, Func<long,long, bool> compareOp, Func<long,long> addOp)
         {
             long result = 0;
             LinkedList<int> indexes = new LinkedList<int>();
@@ -25,11 +27,11 @@
                     compareOp(A[indexes.Last.Value] , A[i])
                     : true))
                 {
-                    var midIndex = indexes.Last.Value;
-                    var midValue = IndexMinAt(A, midIndex);
+                    long midIndex = indexes.Last.Value;
+                    long midValue = IndexMinAt(A, midIndex);
                     indexes.RemoveLast();
 
-                    var firstIndex = indexes.Last.Value;
+                    long firstIndex = indexes.Last.Value;
                     result += addOp(midValue * (i - midIndex) * (midIndex - firstIndex));
                 }
                 indexes.AddLast(i);
@@ -38,10 +40,10 @@
             return result;
         }
 
-        public int IndexMinAt(int [] A, int index)
+        public long IndexMinAt(int [] A, long index)
         {
             if (index == -1)
-                return int.MinValue;
+                return long.MinValue;
             else
                 return A[index];
         }
@@ -74,7 +76,6 @@
             }
 
             return result;
-        }
-
+        }        
     }
 }
