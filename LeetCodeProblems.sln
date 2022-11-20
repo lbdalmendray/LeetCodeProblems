@@ -750,9 +750,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalSquare", "MaximalSqu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalSquareTest", "MaximalSquareTest\MaximalSquareTest.csproj", "{D924D1E6-6F80-4A1F-9466-30C433DB169B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberofProvinces", "NumberofProvinces\NumberofProvinces.csproj", "{2E445AE4-8E18-4888-9123-0C513FFDD4DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberofProvinces", "NumberofProvinces\NumberofProvinces.csproj", "{2E445AE4-8E18-4888-9123-0C513FFDD4DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberofProvincesTest", "NumberofProvincesTest\NumberofProvincesTest.csproj", "{143160D6-D7F5-4361-8AF4-7B940A229020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberofProvincesTest", "NumberofProvincesTest\NumberofProvincesTest.csproj", "{143160D6-D7F5-4361-8AF4-7B940A229020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEmployeeThatWorkedontheLongestTask", "TheEmployeeThatWorkedontheLongestTask\TheEmployeeThatWorkedontheLongestTask.csproj", "{651F096D-B208-4526-9CEC-BA5BF0C7C9FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheOriginalArrayofPrefixXor", "FindTheOriginalArrayofPrefixXor\FindTheOriginalArrayofPrefixXor.csproj", "{F6B1A7CB-5103-435B-96DA-382BCD6CC04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingaRobottoPrinttheLexicographicallySmallestString", "UsingaRobottoPrinttheLexicographicallySmallestString\UsingaRobottoPrinttheLexicographicallySmallestString.csproj", "{06892CB9-E234-41A9-8EE1-9EFF27B655E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingaRobottoPrinttheLexicographicallySmallestStringTest", "UsingaRobottoPrinttheLexicographicallySmallestStringTest\UsingaRobottoPrinttheLexicographicallySmallestStringTest.csproj", "{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2212,6 +2220,22 @@ Global
 		{143160D6-D7F5-4361-8AF4-7B940A229020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143160D6-D7F5-4361-8AF4-7B940A229020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143160D6-D7F5-4361-8AF4-7B940A229020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651F096D-B208-4526-9CEC-BA5BF0C7C9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651F096D-B208-4526-9CEC-BA5BF0C7C9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651F096D-B208-4526-9CEC-BA5BF0C7C9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651F096D-B208-4526-9CEC-BA5BF0C7C9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B1A7CB-5103-435B-96DA-382BCD6CC04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B1A7CB-5103-435B-96DA-382BCD6CC04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B1A7CB-5103-435B-96DA-382BCD6CC04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B1A7CB-5103-435B-96DA-382BCD6CC04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06892CB9-E234-41A9-8EE1-9EFF27B655E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06892CB9-E234-41A9-8EE1-9EFF27B655E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06892CB9-E234-41A9-8EE1-9EFF27B655E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06892CB9-E234-41A9-8EE1-9EFF27B655E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2434,6 +2458,7 @@ Global
 		{D924D1E6-6F80-4A1F-9466-30C433DB169B} = {DC11E792-FDD5-48F8-B734-5BBC40301F7A}
 		{2E445AE4-8E18-4888-9123-0C513FFDD4DF} = {DC11E792-FDD5-48F8-B734-5BBC40301F7A}
 		{143160D6-D7F5-4361-8AF4-7B940A229020} = {DC11E792-FDD5-48F8-B734-5BBC40301F7A}
+		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
