@@ -762,6 +762,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingaRobottoPrinttheLexico
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingaRobottoPrinttheLexicographicallySmallestStringTest", "UsingaRobottoPrinttheLexicographicallySmallestStringTest\UsingaRobottoPrinttheLexicographicallySmallestStringTest.csproj", "{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuevos", "Nuevos", "{8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoandTrominoTiling", "DominoandTrominoTiling\DominoandTrominoTiling.csproj", "{85605F51-59E7-4BF9-982F-3E0BE499F6C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoandTrominoTilingTest", "DominoandTrominoTilingTest\DominoandTrominoTilingTest.csproj", "{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2236,6 +2242,14 @@ Global
 		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85605F51-59E7-4BF9-982F-3E0BE499F6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85605F51-59E7-4BF9-982F-3E0BE499F6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85605F51-59E7-4BF9-982F-3E0BE499F6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85605F51-59E7-4BF9-982F-3E0BE499F6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2459,6 +2473,8 @@ Global
 		{2E445AE4-8E18-4888-9123-0C513FFDD4DF} = {DC11E792-FDD5-48F8-B734-5BBC40301F7A}
 		{143160D6-D7F5-4361-8AF4-7B940A229020} = {DC11E792-FDD5-48F8-B734-5BBC40301F7A}
 		{C8ACB016-5F98-4468-AE0C-3F8DDE9CA784} = {2EA9E0BD-8EA4-4AA1-8FD6-5FA805078619}
+		{85605F51-59E7-4BF9-982F-3E0BE499F6C6} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
+		{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
