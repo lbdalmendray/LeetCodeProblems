@@ -764,13 +764,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingaRobottoPrinttheLexico
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuevos", "Nuevos", "{8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoandTrominoTiling", "DominoandTrominoTiling\DominoandTrominoTiling.csproj", "{85605F51-59E7-4BF9-982F-3E0BE499F6C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominoandTrominoTiling", "DominoandTrominoTiling\DominoandTrominoTiling.csproj", "{85605F51-59E7-4BF9-982F-3E0BE499F6C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoandTrominoTilingTest", "DominoandTrominoTilingTest\DominoandTrominoTilingTest.csproj", "{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominoandTrominoTilingTest", "DominoandTrominoTilingTest\DominoandTrominoTilingTest.csproj", "{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubsequenceWithLimited Sum", "LongestSubsequenceWithLimited Sum\LongestSubsequenceWithLimited Sum.csproj", "{81DC999C-D55A-402B-AA07-F35767EDB1D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestSubsequenceWithLimited Sum", "LongestSubsequenceWithLimited Sum\LongestSubsequenceWithLimited Sum.csproj", "{81DC999C-D55A-402B-AA07-F35767EDB1D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubsequenceWithLimitedSumTest", "LongestSubsequenceWithLimitedSumTest\LongestSubsequenceWithLimitedSumTest.csproj", "{FDBF1781-2121-4A94-A1C4-A326F432DE27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestSubsequenceWithLimitedSumTest", "LongestSubsequenceWithLimitedSumTest\LongestSubsequenceWithLimitedSumTest.csproj", "{FDBF1781-2121-4A94-A1C4-A326F432DE27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveStonestoMinimizetheTotal", "RemoveStonestoMinimizetheTotal\RemoveStonestoMinimizetheTotal.csproj", "{64870D5C-69F3-41E8-B0D3-CC4746A25E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveStonestoMinimizetheTotalTest", "RemoveStonestoMinimizetheTotalTest\RemoveStonestoMinimizetheTotalTest.csproj", "{81883801-B701-41C8-AD6F-27231F888A9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2262,6 +2266,14 @@ Global
 		{FDBF1781-2121-4A94-A1C4-A326F432DE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDBF1781-2121-4A94-A1C4-A326F432DE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDBF1781-2121-4A94-A1C4-A326F432DE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64870D5C-69F3-41E8-B0D3-CC4746A25E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64870D5C-69F3-41E8-B0D3-CC4746A25E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64870D5C-69F3-41E8-B0D3-CC4746A25E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64870D5C-69F3-41E8-B0D3-CC4746A25E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81883801-B701-41C8-AD6F-27231F888A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81883801-B701-41C8-AD6F-27231F888A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81883801-B701-41C8-AD6F-27231F888A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81883801-B701-41C8-AD6F-27231F888A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2489,6 +2501,8 @@ Global
 		{E7B0BFFB-0D10-4B36-83D0-FA3C9C63FB9D} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
 		{81DC999C-D55A-402B-AA07-F35767EDB1D6} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
 		{FDBF1781-2121-4A94-A1C4-A326F432DE27} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
+		{64870D5C-69F3-41E8-B0D3-CC4746A25E38} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
+		{81883801-B701-41C8-AD6F-27231F888A9C} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
