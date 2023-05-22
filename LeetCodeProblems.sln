@@ -772,9 +772,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestSubsequenceWithLimit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongestSubsequenceWithLimitedSumTest", "LongestSubsequenceWithLimitedSumTest\LongestSubsequenceWithLimitedSumTest.csproj", "{FDBF1781-2121-4A94-A1C4-A326F432DE27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveStonestoMinimizetheTotal", "RemoveStonestoMinimizetheTotal\RemoveStonestoMinimizetheTotal.csproj", "{64870D5C-69F3-41E8-B0D3-CC4746A25E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveStonestoMinimizetheTotal", "RemoveStonestoMinimizetheTotal\RemoveStonestoMinimizetheTotal.csproj", "{64870D5C-69F3-41E8-B0D3-CC4746A25E38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveStonestoMinimizetheTotalTest", "RemoveStonestoMinimizetheTotalTest\RemoveStonestoMinimizetheTotalTest.csproj", "{81883801-B701-41C8-AD6F-27231F888A9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveStonestoMinimizetheTotalTest", "RemoveStonestoMinimizetheTotalTest\RemoveStonestoMinimizetheTotalTest.csproj", "{81883801-B701-41C8-AD6F-27231F888A9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News", "News", "{066CEBBA-78ED-4997-B0EF-46FA9EBF020E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumStringLengthAfterRemovingSubstrings", "MinimumStringLengthAfterRemovingSubstrings\MinimumStringLengthAfterRemovingSubstrings.csproj", "{A6C94D6C-177F-48D7-A9FF-FDE5940FF292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumStringLengthAfterRemovingSubstringsTest", "MinimumStringLengthAfterRemovingSubstringsTest\MinimumStringLengthAfterRemovingSubstringsTest.csproj", "{A3C25843-5215-469C-9BAE-707086CCB405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2274,6 +2280,14 @@ Global
 		{81883801-B701-41C8-AD6F-27231F888A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81883801-B701-41C8-AD6F-27231F888A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81883801-B701-41C8-AD6F-27231F888A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C94D6C-177F-48D7-A9FF-FDE5940FF292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C94D6C-177F-48D7-A9FF-FDE5940FF292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C94D6C-177F-48D7-A9FF-FDE5940FF292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C94D6C-177F-48D7-A9FF-FDE5940FF292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C25843-5215-469C-9BAE-707086CCB405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C25843-5215-469C-9BAE-707086CCB405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C25843-5215-469C-9BAE-707086CCB405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C25843-5215-469C-9BAE-707086CCB405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2503,6 +2517,8 @@ Global
 		{FDBF1781-2121-4A94-A1C4-A326F432DE27} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
 		{64870D5C-69F3-41E8-B0D3-CC4746A25E38} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
 		{81883801-B701-41C8-AD6F-27231F888A9C} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
+		{A6C94D6C-177F-48D7-A9FF-FDE5940FF292} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{A3C25843-5215-469C-9BAE-707086CCB405} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
