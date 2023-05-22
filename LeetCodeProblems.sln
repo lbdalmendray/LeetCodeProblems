@@ -782,6 +782,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumStringLengthAfterRem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumStringLengthAfterRemovingSubstringsTest", "MinimumStringLengthAfterRemovingSubstringsTest\MinimumStringLengthAfterRemovingSubstringsTest.csproj", "{A3C25843-5215-469C-9BAE-707086CCB405}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexicographicallySmallestPalindrome", "LexicographicallySmallestPalindrome\LexicographicallySmallestPalindrome.csproj", "{52DECA66-F382-4F53-9488-BF44F4B74A10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2288,6 +2290,10 @@ Global
 		{A3C25843-5215-469C-9BAE-707086CCB405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3C25843-5215-469C-9BAE-707086CCB405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3C25843-5215-469C-9BAE-707086CCB405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52DECA66-F382-4F53-9488-BF44F4B74A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DECA66-F382-4F53-9488-BF44F4B74A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DECA66-F382-4F53-9488-BF44F4B74A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DECA66-F382-4F53-9488-BF44F4B74A10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2519,6 +2525,7 @@ Global
 		{81883801-B701-41C8-AD6F-27231F888A9C} = {8B2ED48A-CBFE-458C-8779-0D7050CFFB7D}
 		{A6C94D6C-177F-48D7-A9FF-FDE5940FF292} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{A3C25843-5215-469C-9BAE-707086CCB405} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{52DECA66-F382-4F53-9488-BF44F4B74A10} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
