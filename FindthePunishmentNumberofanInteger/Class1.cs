@@ -54,6 +54,10 @@
                     {
                         return number == partNumber + partNumber2;
                     }
+                    else if (number < partNumber)
+                    {
+                        return false;
+                    }
                     else if (Condition(partNumber2, number - partNumber))
                     {
                         return true;
