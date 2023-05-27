@@ -778,17 +778,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveStonestoMinimizetheTo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News", "News", "{066CEBBA-78ED-4997-B0EF-46FA9EBF020E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumStringLengthAfterRemovingSubstrings", "MinimumStringLengthAfterRemovingSubstrings\MinimumStringLengthAfterRemovingSubstrings.csproj", "{A6C94D6C-177F-48D7-A9FF-FDE5940FF292}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumStringLengthAfterRemovingSubstrings", "MinimumStringLengthAfterRemovingSubstrings\MinimumStringLengthAfterRemovingSubstrings.csproj", "{A6C94D6C-177F-48D7-A9FF-FDE5940FF292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumStringLengthAfterRemovingSubstringsTest", "MinimumStringLengthAfterRemovingSubstringsTest\MinimumStringLengthAfterRemovingSubstringsTest.csproj", "{A3C25843-5215-469C-9BAE-707086CCB405}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumStringLengthAfterRemovingSubstringsTest", "MinimumStringLengthAfterRemovingSubstringsTest\MinimumStringLengthAfterRemovingSubstringsTest.csproj", "{A3C25843-5215-469C-9BAE-707086CCB405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexicographicallySmallestPalindrome", "LexicographicallySmallestPalindrome\LexicographicallySmallestPalindrome.csproj", "{52DECA66-F382-4F53-9488-BF44F4B74A10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LexicographicallySmallestPalindrome", "LexicographicallySmallestPalindrome\LexicographicallySmallestPalindrome.csproj", "{52DECA66-F382-4F53-9488-BF44F4B74A10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindthePunishmentNumberofanInteger", "FindthePunishmentNumberofanInteger\FindthePunishmentNumberofanInteger.csproj", "{9D62B560-C640-41AE-8772-2216BFBD26BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofanInteger", "FindthePunishmentNumberofanInteger\FindthePunishmentNumberofanInteger.csproj", "{9D62B560-C640-41AE-8772-2216BFBD26BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{626DFAF0-0E51-45DD-9707-603217DF66F6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindthePunishmentNumberofanIntegerTest", "FindthePunishmentNumberofanIntegerTest\FindthePunishmentNumberofanIntegerTest.csproj", "{68FF3ADA-1099-4542-ADC5-26790CE12995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofanIntegerTest", "FindthePunishmentNumberofanIntegerTest\FindthePunishmentNumberofanIntegerTest.csproj", "{68FF3ADA-1099-4542-ADC5-26790CE12995}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2304,10 +2302,6 @@ Global
 		{9D62B560-C640-41AE-8772-2216BFBD26BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D62B560-C640-41AE-8772-2216BFBD26BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D62B560-C640-41AE-8772-2216BFBD26BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{626DFAF0-0E51-45DD-9707-603217DF66F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{626DFAF0-0E51-45DD-9707-603217DF66F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{626DFAF0-0E51-45DD-9707-603217DF66F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{626DFAF0-0E51-45DD-9707-603217DF66F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -2545,7 +2539,6 @@ Global
 		{A3C25843-5215-469C-9BAE-707086CCB405} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{52DECA66-F382-4F53-9488-BF44F4B74A10} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{9D62B560-C640-41AE-8772-2216BFBD26BF} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
-		{626DFAF0-0E51-45DD-9707-603217DF66F6} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{68FF3ADA-1099-4542-ADC5-26790CE12995} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
