@@ -788,9 +788,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofanIntegerTest", "FindthePunishmentNumberofanIntegerTest\FindthePunishmentNumberofanIntegerTest.csproj", "{68FF3ADA-1099-4542-ADC5-26790CE12995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifyGraphEdgeWeights", "ModifyGraphEdgeWeights\ModifyGraphEdgeWeights.csproj", "{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModifyGraphEdgeWeights", "ModifyGraphEdgeWeights\ModifyGraphEdgeWeights.csproj", "{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifyGraphEdgeWeightsTest", "ModifyGraphEdgeWeightsTest\ModifyGraphEdgeWeightsTest.csproj", "{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModifyGraphEdgeWeightsTest", "ModifyGraphEdgeWeightsTest\ModifyGraphEdgeWeightsTest.csproj", "{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveTrailingZerosFromaString", "RemoveTrailingZerosFromaString\RemoveTrailingZerosFromaString.csproj", "{47BC70D0-5472-49BC-BE2E-9BB7E2501B9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveTrailingZerosFromaStringTest", "RemoveTrailingZerosFromaStringTest\RemoveTrailingZerosFromaStringTest.csproj", "{0482D26B-1411-4204-A9C1-8AA1E68FD3AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2318,6 +2322,14 @@ Global
 		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47BC70D0-5472-49BC-BE2E-9BB7E2501B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BC70D0-5472-49BC-BE2E-9BB7E2501B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BC70D0-5472-49BC-BE2E-9BB7E2501B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BC70D0-5472-49BC-BE2E-9BB7E2501B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0482D26B-1411-4204-A9C1-8AA1E68FD3AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0482D26B-1411-4204-A9C1-8AA1E68FD3AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0482D26B-1411-4204-A9C1-8AA1E68FD3AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0482D26B-1411-4204-A9C1-8AA1E68FD3AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2554,6 +2566,8 @@ Global
 		{68FF3ADA-1099-4542-ADC5-26790CE12995} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{47BC70D0-5472-49BC-BE2E-9BB7E2501B9D} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{0482D26B-1411-4204-A9C1-8AA1E68FD3AC} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
