@@ -186,5 +186,44 @@ Explanation: The graph above shows a modified graph having the shortest distance
 
             CollectionAssert.AreNotEquivalent(result, new int[][] { });
         }
+
+        /*
+          n = 5
+          edges = [[1, 2, -1], [2, 4, 4634490], [3, 1, -1], [0, 1, 32605]]
+          source = 3
+          destination = 0
+          target = 765314006
+         */
+
+        [TestMethod]
+        public void TestMethod11()
+        {
+            Solution solution = new Solution();
+            var result = solution.ModifiedGraphEdges(5, new int[][]
+            {
+                new int[]{ 1, 2, -1 }
+                ,new int[]{ 2, 4, 4634490 }
+                ,new int[]{ 3, 1, -1 }
+                ,new int[]{ 0, 1, 32605 }
+            }, 3, 0, 765314006);
+
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
+        }
+
+        [TestMethod]
+        public void TestMethod12()
+        {
+            Solution solution = new Solution();
+
+            var result = solution.ModifiedGraphEdges(5, new int[][]
+            {
+                new int[]{ 1, 2, -1 }
+                ,new int[]{ 2, 4, 10 }
+                ,new int[]{ 3, 1, -1 }
+                ,new int[]{ 0, 1, 30 }
+            }, 3, 0, 50);
+
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
+        }
     }
 }
