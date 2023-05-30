@@ -788,6 +788,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofanIntegerTest", "FindthePunishmentNumberofanIntegerTest\FindthePunishmentNumberofanIntegerTest.csproj", "{68FF3ADA-1099-4542-ADC5-26790CE12995}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifyGraphEdgeWeights", "ModifyGraphEdgeWeights\ModifyGraphEdgeWeights.csproj", "{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifyGraphEdgeWeightsTest", "ModifyGraphEdgeWeightsTest\ModifyGraphEdgeWeightsTest.csproj", "{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2306,6 +2310,14 @@ Global
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2540,6 +2552,8 @@ Global
 		{52DECA66-F382-4F53-9488-BF44F4B74A10} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{9D62B560-C640-41AE-8772-2216BFBD26BF} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{68FF3ADA-1099-4542-ADC5-26790CE12995} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{EAEC3F47-8ADD-428D-9F09-5FB9CB7BE31A} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{4251E17E-6B21-446C-9BE2-C7FEA3E367DC} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
