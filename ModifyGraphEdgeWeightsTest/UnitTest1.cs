@@ -16,6 +16,8 @@ namespace ModifyGraphEdgeWeightsTest
                 ,new int[]{0, 3, -1 }
                 ,new int[]{4, 3, -1 }
             }, 0, 1 , 5);
+
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
         }
 
         [TestMethod]
@@ -29,6 +31,8 @@ namespace ModifyGraphEdgeWeightsTest
                 ,new int[]{0, 3, -1 }
                 ,new int[]{4, 3, -1 }
             }, 2, 1, 5);
+
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
         }
 
         [TestMethod]
@@ -78,6 +82,8 @@ namespace ModifyGraphEdgeWeightsTest
                 , new int []{ 1,2,10}
                 , new int []{ 3,2,3}
             }, 2, 1, 5);
+
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
         }
 
         /*
@@ -115,7 +121,7 @@ namespace ModifyGraphEdgeWeightsTest
 
             }, 1, 2, 6);
 
-            CollectionAssert.AreEquivalent(result, new int[][] { });
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
         }
 
         /*
@@ -136,6 +142,8 @@ Explanation: The graph above shows a modified graph having the shortest distance
                 ,new int[]{ 0, 3, -1 }
 
             }, 0, 2, 6);
+
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
         }
 
         /*
@@ -156,6 +164,27 @@ Explanation: The graph above shows a modified graph having the shortest distance
 
             }, 1, 0, 1177222);
 
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
+        }
+        /*
+         [[1,4,1],[2,4,-1],[3,0,2],[0,4,-1],[1,3,10],[1,0,10]]
+         */
+        [TestMethod]
+        public void TestMethod10()
+        {
+            Solution solution = new Solution();
+
+            var result = solution.ModifiedGraphEdges(5, new int[][]
+            {
+                new int[]{ 1, 4, 1 }
+                ,new int[]{ 2, 4, -1 }
+                ,new int[]{ 3, 0, 2 }
+                ,new int[]{ 0, 4, -1 }
+                ,new int[]{ 1, 3, 10 }
+                ,new int[]{ 1, 0, 10 }
+            }, 0, 2, 15);
+
+            CollectionAssert.AreNotEquivalent(result, new int[][] { });
         }
     }
 }

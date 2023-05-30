@@ -50,11 +50,17 @@
                         
                         if (variableMinDisTreeEdge != null)
                         {
-                            var newEdgeWeight = variableMinDisTreeEdge[2] + target - minDistance;
+                            int currentWeight = graph.GetWeightFromEdge(variableMinDisTreeEdge[0], variableMinDisTreeEdge[1]);
+                            var newEdgeWeight = currentWeight + target - minDistance;
                             variableMinDisTreeEdge[2] = newEdgeWeight;
                             graph.UpdateEdgeWeight(variableMinDisTreeEdge);
 
-                            HashSet<(int, int)> goodVariableEdges = new HashSet<(int, int)>(edgeList.Select(e => (e.Item1[0], e.Item1[1])));
+                            HashSet<(int, int)> goodVariableEdges 
+                                = new HashSet<(int, int)>(
+                                    edgeList
+                                    .Where(e=>e.Item2)
+                                    .Select(e => (e.Item1[0], e.Item1[1])));
+
                             IEnumerable<int[]> badVariableEdges = graph.GetVariableEdgesWithNoWeight()
                                 .Where(e => !goodVariableEdges.Contains((e[0], e[1])) && !goodVariableEdges.Contains((e[1], e[0])))
                                 .ToArray();
@@ -64,6 +70,8 @@
                                 graph.UpdateEdgeWeight(new int[] { badVariableEdge[0], badVariableEdge[1], target });
                                 graph.ChangeVariableEdgeToNot(badVariableEdge[0], badVariableEdge[1]);
                             }
+
+                            graph.ChangeVariableEdgeToNot(variableMinDisTreeEdge[0], variableMinDisTreeEdge[1]);
 
                             minDistance = graph.CalculateMinDistance(source, destination, out minDistTree);
                         }
@@ -271,6 +279,15 @@
         internal void ChangeVariableEdgeToNot(int vertex1, int vertex2)
         {
             VariableEdges.Remove((vertex1, vertex2));
+            if( undirectGraph)
+            {
+                VariableEdges.Remove((vertex2, vertex1));
+            }
+        }
+
+        internal int GetWeightFromEdge(int vertex1, int vertex2)
+        {
+            return edgeWeightList[vertex1][vertex2];
         }
     }
 }
