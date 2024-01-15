@@ -35,10 +35,10 @@ namespace DetermineifTwoStringsAreClose
                     if (countHashSet.Count == 0)
                         word1CounterChar.Remove(count);
                     word1CharCounter[otherLetter] = word1CharValueCount;
-                    if ( word1CounterChar.TryGetValue(word1CharValueCount, out var chars))
+                    if ( word1CounterChar.TryGetValue(word1CharValueCount, out var hashSet))
                     {
-                        chars.Remove(charValue);
-                        chars.Add(otherLetter);
+                        hashSet.Remove(charValue);
+                        hashSet.Add(otherLetter);
                     }
                     word1CharCounter.Remove(charValue);
                 }
