@@ -788,6 +788,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindthePunishmentNumberofanIntegerTest", "FindthePunishmentNumberofanIntegerTest\FindthePunishmentNumberofanIntegerTest.csproj", "{68FF3ADA-1099-4542-ADC5-26790CE12995}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetermineifTwoStringsAreClose", "DetermineifTwoStringsAreClose\DetermineifTwoStringsAreClose.csproj", "{38B05474-19E9-479A-85F2-535B673F7876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetermineifTwoStringsAreCloseTest", "DetermineifTwoStringsAreCloseTest\DetermineifTwoStringsAreCloseTest.csproj", "{49763687-2646-4F34-892E-100566B45832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2306,6 +2310,14 @@ Global
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68FF3ADA-1099-4542-ADC5-26790CE12995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B05474-19E9-479A-85F2-535B673F7876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B05474-19E9-479A-85F2-535B673F7876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B05474-19E9-479A-85F2-535B673F7876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B05474-19E9-479A-85F2-535B673F7876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49763687-2646-4F34-892E-100566B45832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49763687-2646-4F34-892E-100566B45832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49763687-2646-4F34-892E-100566B45832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49763687-2646-4F34-892E-100566B45832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2540,6 +2552,8 @@ Global
 		{52DECA66-F382-4F53-9488-BF44F4B74A10} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{9D62B560-C640-41AE-8772-2216BFBD26BF} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{68FF3ADA-1099-4542-ADC5-26790CE12995} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{38B05474-19E9-479A-85F2-535B673F7876} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{49763687-2646-4F34-892E-100566B45832} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
