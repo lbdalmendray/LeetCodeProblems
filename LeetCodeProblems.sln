@@ -792,9 +792,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DetermineifTwoStringsAreClo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DetermineifTwoStringsAreCloseTest", "DetermineifTwoStringsAreCloseTest\DetermineifTwoStringsAreCloseTest.csproj", "{49763687-2646-4F34-892E-100566B45832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeVerticalOrderTraversal", "BinaryTreeVerticalOrderTraversal\BinaryTreeVerticalOrderTraversal.csproj", "{86C920F0-90FC-4607-AB2B-CD23B2DF293A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeVerticalOrderTraversal", "BinaryTreeVerticalOrderTraversal\BinaryTreeVerticalOrderTraversal.csproj", "{86C920F0-90FC-4607-AB2B-CD23B2DF293A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeVerticalOrderTraversalTest", "BinaryTreeVerticalOrderTraversalTest\BinaryTreeVerticalOrderTraversalTest.csproj", "{5C66459E-747A-4453-9467-95DC3D342397}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeVerticalOrderTraversalTest", "BinaryTreeVerticalOrderTraversalTest\BinaryTreeVerticalOrderTraversalTest.csproj", "{5C66459E-747A-4453-9467-95DC3D342397}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowestCommonAncestorOfABinaryTreeIII", "LowestCommonAncestorOfABinaryTreeIII\LowestCommonAncestorOfABinaryTreeIII.csproj", "{E16EB486-96D3-4CA4-8843-28129D0B82E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowestCommonAncestorOfABinaryTreeIIITest", "LowestCommonAncestorOfABinaryTreeIIITest\LowestCommonAncestorOfABinaryTreeIIITest.csproj", "{E753770D-FA91-4BF7-A7D3-805C1DE60913}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2330,6 +2334,14 @@ Global
 		{5C66459E-747A-4453-9467-95DC3D342397}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C66459E-747A-4453-9467-95DC3D342397}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C66459E-747A-4453-9467-95DC3D342397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16EB486-96D3-4CA4-8843-28129D0B82E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16EB486-96D3-4CA4-8843-28129D0B82E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16EB486-96D3-4CA4-8843-28129D0B82E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16EB486-96D3-4CA4-8843-28129D0B82E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E753770D-FA91-4BF7-A7D3-805C1DE60913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E753770D-FA91-4BF7-A7D3-805C1DE60913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E753770D-FA91-4BF7-A7D3-805C1DE60913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E753770D-FA91-4BF7-A7D3-805C1DE60913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2568,6 +2580,8 @@ Global
 		{49763687-2646-4F34-892E-100566B45832} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{86C920F0-90FC-4607-AB2B-CD23B2DF293A} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{5C66459E-747A-4453-9467-95DC3D342397} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{E16EB486-96D3-4CA4-8843-28129D0B82E9} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{E753770D-FA91-4BF7-A7D3-805C1DE60913} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
