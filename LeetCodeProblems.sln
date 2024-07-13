@@ -804,9 +804,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalNetworkRank", "Maxim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalNetworkRankTest", "MaximalNetworkRankTest\MaximalNetworkRankTest.csproj", "{FA7D9C25-B7B3-4711-90E0-E12669276DA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumMovesToSpreadStonesOverGrid", "MinimumMovesToSpreadStonesOverGrid\MinimumMovesToSpreadStonesOverGrid.csproj", "{6AED7E4C-C225-40FC-85D4-3FC483987F1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumMovesToSpreadStonesOverGrid", "MinimumMovesToSpreadStonesOverGrid\MinimumMovesToSpreadStonesOverGrid.csproj", "{6AED7E4C-C225-40FC-85D4-3FC483987F1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumMovesToSpreadStonesOverGridTest", "MinimumMovesToSpreadStonesOverGridTest\MinimumMovesToSpreadStonesOverGridTest.csproj", "{37C02F9C-B2FB-4171-976C-C3338593B910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumMovesToSpreadStonesOverGridTest", "MinimumMovesToSpreadStonesOverGridTest\MinimumMovesToSpreadStonesOverGridTest.csproj", "{37C02F9C-B2FB-4171-976C-C3338593B910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InorderSuccessorinBST", "InorderSuccessorinBST\InorderSuccessorinBST.csproj", "{A1EA89A0-44D0-4DEA-BAF2-A9C76F36DA4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InorderSuccessorinBSTTest", "InorderSuccessorinBSTTest\InorderSuccessorinBSTTest.csproj", "{54CA0B86-3CA1-494D-B0E2-FBDFABEE05F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2366,6 +2370,14 @@ Global
 		{37C02F9C-B2FB-4171-976C-C3338593B910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37C02F9C-B2FB-4171-976C-C3338593B910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37C02F9C-B2FB-4171-976C-C3338593B910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1EA89A0-44D0-4DEA-BAF2-A9C76F36DA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1EA89A0-44D0-4DEA-BAF2-A9C76F36DA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1EA89A0-44D0-4DEA-BAF2-A9C76F36DA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1EA89A0-44D0-4DEA-BAF2-A9C76F36DA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CA0B86-3CA1-494D-B0E2-FBDFABEE05F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CA0B86-3CA1-494D-B0E2-FBDFABEE05F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CA0B86-3CA1-494D-B0E2-FBDFABEE05F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CA0B86-3CA1-494D-B0E2-FBDFABEE05F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2610,6 +2622,8 @@ Global
 		{FA7D9C25-B7B3-4711-90E0-E12669276DA2} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{6AED7E4C-C225-40FC-85D4-3FC483987F1D} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{37C02F9C-B2FB-4171-976C-C3338593B910} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{A1EA89A0-44D0-4DEA-BAF2-A9C76F36DA4C} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{54CA0B86-3CA1-494D-B0E2-FBDFABEE05F5} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
