@@ -31,7 +31,7 @@ public class Graph
     public int[] TopologicalOrder()
     {
         List<int> result = new List<int>();
-        HashSet<int> touched = new HashSet<int>();
+        bool [] touched = new bool[content.Length];
 
         if( TopologicalOrder(result, touched))
             return result.ToArray();
@@ -41,16 +41,16 @@ public class Graph
         }    
     }
 
-    private bool TopologicalOrder(List<int> result, HashSet<int> touched)
+    private bool TopologicalOrder(List<int> result, bool[] touched)
     {
         for (int vertex = 0; vertex < content.Length; vertex++)
         {
-            if (touched.Contains(vertex))
+            if (touched[vertex])
                 continue;
             else
             {
-                HashSet<int> currentTouched = new HashSet<int>();
-                if(!TopologicalOrder(vertex, result, touched, currentTouched) )
+                bool[] currentTouched = new bool[content.Length];
+                if (!TopologicalOrder(vertex, result, touched, currentTouched) )
                 {
                     return false;
                 }
@@ -60,20 +60,20 @@ public class Graph
         return true;
     }
 
-    private bool TopologicalOrder(int vertex, List<int> result, HashSet<int> touched, HashSet<int> currentTouched)
+    private bool TopologicalOrder(int vertex, List<int> result, bool[] touched, bool[] currentTouched)
     {
-        if (currentTouched.Contains(vertex)) 
+        if (currentTouched[vertex]) 
         {
             return false;
         }
-        else if (touched.Contains(vertex))
+        else if (touched[vertex])
         {
             return true;
         }
         else
         {
-            currentTouched.Add(vertex);
-            touched.Add(vertex);
+            currentTouched[vertex] = true;
+            touched[vertex] = true;
 
             foreach (var item in content[vertex])
             {
@@ -82,7 +82,7 @@ public class Graph
             }
 
             result.Add(vertex);
-            currentTouched.Remove(vertex);
+            currentTouched[vertex] = false;
 
             return true;
         }
