@@ -848,9 +848,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigzagConversion", "ZigzagC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigzagConversionTest", "ZigzagConversionTest\ZigzagConversionTest.csproj", "{3CE6E9CB-7011-4C1C-A5CE-E5B934D1451D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger", "ReverseInteger\ReverseInteger.csproj", "{12A68B8F-2334-49CC-AE1B-08470E710EFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseInteger", "ReverseInteger\ReverseInteger.csproj", "{12A68B8F-2334-49CC-AE1B-08470E710EFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseIntegerTest", "ReverseIntegerTest\ReverseIntegerTest.csproj", "{C5FFAAE8-E339-4139-A655-759A9A5674E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseIntegerTest", "ReverseIntegerTest\ReverseIntegerTest.csproj", "{C5FFAAE8-E339-4139-A655-759A9A5674E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumNumberIncrementsSubarraysFormTargetArray", "MinimumNumberIncrementsSubarraysFormTargetArray\MinimumNumberIncrementsSubarraysFormTargetArray.csproj", "{4273A4F1-6A63-489C-B18C-8C8D02EE35FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumNumberIncrementsSubarraysFormTargetArrayTest", "MinimumNumberIncrementsSubarraysFormTargetArrayTest\MinimumNumberIncrementsSubarraysFormTargetArrayTest.csproj", "{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2498,6 +2502,14 @@ Global
 		{C5FFAAE8-E339-4139-A655-759A9A5674E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5FFAAE8-E339-4139-A655-759A9A5674E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5FFAAE8-E339-4139-A655-759A9A5674E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4273A4F1-6A63-489C-B18C-8C8D02EE35FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4273A4F1-6A63-489C-B18C-8C8D02EE35FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4273A4F1-6A63-489C-B18C-8C8D02EE35FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4273A4F1-6A63-489C-B18C-8C8D02EE35FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2764,6 +2776,8 @@ Global
 		{3CE6E9CB-7011-4C1C-A5CE-E5B934D1451D} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{12A68B8F-2334-49CC-AE1B-08470E710EFC} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{C5FFAAE8-E339-4139-A655-759A9A5674E4} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{4273A4F1-6A63-489C-B18C-8C8D02EE35FD} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
