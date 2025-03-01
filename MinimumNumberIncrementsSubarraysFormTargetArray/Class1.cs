@@ -12,14 +12,14 @@ public class Solution
         SortedSet<int> sortedUniqueTargetValues = new SortedSet<int>(target, Comparer<int>.Create((a, b) => b - a));
 
         /// CREATING RANGES (int index1, int index2, int value)
-        List<(int index1, int index2, int value)> rangeList = GenerateRangeList(target);
+        List<Info> rangeList = GenerateRangeList(target);
 
         /// CREATING linkedListListBySortedUniqueTargetValues
-        LinkedList<(int index1, int index2, int value)>[] linkedListListBySortedUniqueTargetValues = GeneratelinkedListListBySortedUniqueTargetValues(sortedUniqueTargetValues, rangeList,
+        LinkedList<Info>[] linkedListListBySortedUniqueTargetValues = GeneratelinkedListListBySortedUniqueTargetValues(sortedUniqueTargetValues, rangeList,
             out Dictionary<int, int> sortedUniqueTargetValuesIndexes);
 
         /// CREATING nodeTargetArray
-        LinkedListNode<(int index1, int index2, int value)>[] nodeTargetArray = GenerateNodeTargetArray(target.Length, linkedListListBySortedUniqueTargetValues);
+        LinkedListNode<Info>[] nodeTargetArray = GenerateNodeTargetArray(target.Length, linkedListListBySortedUniqueTargetValues);
 
         int result = 0;
 
@@ -27,19 +27,18 @@ public class Solution
         {
             var list = linkedListListBySortedUniqueTargetValues[i];
 
-            foreach ((int index1l, int index2l, int valuel) in list)
+            foreach (Info info in list)
             {
                 int nextValue = 0;
-                (int index1, int index2, int value) = (index1l, index2l, valuel);
 
-                int index1Less1 = index1 - 1;
+                int index1Less1 = info.index1 - 1;
                 if (index1Less1 > -1)
                 {
                     var indexless1Node = nodeTargetArray[index1Less1];
                     nextValue = Math.Max(indexless1Node.Value.value, nextValue);
                 }
 
-                int index2Plus1 = index2 + 1;
+                int index2Plus1 = info.index2 + 1;
                 if (index2Plus1 < target.Length)
                 {
                     var index2Plus1Node = nodeTargetArray[index2Plus1];
@@ -54,7 +53,7 @@ public class Solution
                     var indexless1Node = nodeTargetArray[index1Less1];
                     if (indexless1Node.Value.value == nextValue)
                     {
-                        index1 = indexless1Node.Value.index1;
+                        info.index1 = indexless1Node.Value.index1;
                         indexless1Node.List.Remove(indexless1Node);
                     }
                 }
@@ -64,29 +63,29 @@ public class Solution
                     var index2Plus1Node = nodeTargetArray[index2Plus1];
                     if (index2Plus1Node.Value.value == nextValue)
                     {
-                        index2 = index2Plus1Node.Value.index2;
+                        info.index2 = index2Plus1Node.Value.index2;
                         index2Plus1Node.List.Remove(index2Plus1Node);
                     }
                 }
 
+                result += info.value - nextValue;
+
                 if (nextValue != 0)
                 {
-                    var newNode = linkedListListBySortedUniqueTargetValues[sortedUniqueTargetValuesIndexes[nextValue]].AddLast((index1, index2, nextValue));
-                    nodeTargetArray[index1] = newNode;
-                    nodeTargetArray[index2] = newNode;
+                    info.value = nextValue;
+                    var newNode = linkedListListBySortedUniqueTargetValues[sortedUniqueTargetValuesIndexes[nextValue]].AddLast(info);
+                    nodeTargetArray[info.index1] = newNode;
+                    nodeTargetArray[info.index2] = newNode;
                 }
-
-                result += value - nextValue ;
-
             }
         }
 
         return result;
     }
 
-    private LinkedListNode<(int index1, int index2, int value)>[] GenerateNodeTargetArray(int targetLenght, LinkedList<(int index1, int index2, int value)>[] linkedListListBySortedUniqueTargetValues)
+    private LinkedListNode<Info>[] GenerateNodeTargetArray(int targetLenght, LinkedList<Info>[] linkedListListBySortedUniqueTargetValues)
     {
-        LinkedListNode<(int index1, int index2, int value)>[] result = new LinkedListNode<(int index1, int index2, int value)>[targetLenght];
+        LinkedListNode<Info>[] result = new LinkedListNode<Info>[targetLenght];
 
         foreach (var list in linkedListListBySortedUniqueTargetValues)
         {
@@ -102,27 +101,27 @@ public class Solution
         return result;
     }
 
-    private LinkedList<(int index1, int index2, int value)>[] GeneratelinkedListListBySortedUniqueTargetValues(SortedSet<int> sortedUniqueTargetValues , List<(int index1, int index2, int value)> rangeList
+    private LinkedList<Info>[] GeneratelinkedListListBySortedUniqueTargetValues(SortedSet<int> sortedUniqueTargetValues , List<Info> rangeList
         , out Dictionary<int, int> sortedUniqueTargetValuesIndexes)
     {
-        LinkedList<(int index1, int index2, int value)>[] result = new LinkedList<(int index1, int index2, int value)>[sortedUniqueTargetValues.Count];
+        LinkedList<Info>[] result = new LinkedList<Info>[sortedUniqueTargetValues.Count];
         sortedUniqueTargetValuesIndexes = new Dictionary<int, int>();
         int i = 0;
         foreach (var sortedUniqueTargetValue in sortedUniqueTargetValues)
         {
             sortedUniqueTargetValuesIndexes[sortedUniqueTargetValue] = i;
-            result[i++] = new LinkedList<(int index1, int index2, int value)>();
+            result[i++] = new LinkedList<Info>();
         }
 
-        foreach ((int index1, int index2, int value) in rangeList)
-            result[sortedUniqueTargetValuesIndexes[value]].AddLast(( index1,  index2, value));
+        foreach (Info info in rangeList)
+            result[sortedUniqueTargetValuesIndexes[info.value]].AddLast(info);
 
         return result;
     }
 
-    private List<(int index1, int index2, int value)> GenerateRangeList(int[] target)
+    private List<Info> GenerateRangeList(int[] target)
     {
-        List<(int index1, int index2, int value)> result = new();
+        List<Info> result = new();
 
         for (int i = 0; i < target.Length; i++)
         {
@@ -136,10 +135,17 @@ public class Solution
                 else
                     break;
             }
-            result.Add((i, lastIndexDifferent - 1, target[i]));
+            result.Add(new Info { index1 = i, index2 = lastIndexDifferent - 1, value = target[i] });
             i = lastIndexDifferent - 1;
         }
 
         return result;
+    }
+
+    private class Info
+    {
+        public int index1;
+        public int index2;
+        public int value;
     }
 }
