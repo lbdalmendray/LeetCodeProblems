@@ -856,9 +856,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumNumberIncrementsSuba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumNumberIncrementsSubarraysFormTargetArrayTest", "MinimumNumberIncrementsSubarraysFormTargetArrayTest\MinimumNumberIncrementsSubarraysFormTargetArrayTest.csproj", "{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupAnagrams", "GroupAnagrams\GroupAnagrams.csproj", "{5E7E082F-086C-45A9-952C-C12DE35600D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupAnagrams", "GroupAnagrams\GroupAnagrams.csproj", "{5E7E082F-086C-45A9-952C-C12DE35600D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupAnagramsTest", "GroupAnagramsTest\GroupAnagramsTest.csproj", "{35031CD9-A326-4207-B872-A9F5036F4C06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupAnagramsTest", "GroupAnagramsTest\GroupAnagramsTest.csproj", "{35031CD9-A326-4207-B872-A9F5036F4C06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopKFrequentElements", "TopKFrequentElements\TopKFrequentElements.csproj", "{1E8C6E92-421C-4654-88F3-21031362B45D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopKFrequentElementsTest", "TopKFrequentElementsTest\TopKFrequentElementsTest.csproj", "{C65B6618-00E2-4744-A234-1EBD432F0024}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2522,6 +2526,14 @@ Global
 		{35031CD9-A326-4207-B872-A9F5036F4C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35031CD9-A326-4207-B872-A9F5036F4C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35031CD9-A326-4207-B872-A9F5036F4C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8C6E92-421C-4654-88F3-21031362B45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8C6E92-421C-4654-88F3-21031362B45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8C6E92-421C-4654-88F3-21031362B45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8C6E92-421C-4654-88F3-21031362B45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65B6618-00E2-4744-A234-1EBD432F0024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65B6618-00E2-4744-A234-1EBD432F0024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65B6618-00E2-4744-A234-1EBD432F0024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65B6618-00E2-4744-A234-1EBD432F0024}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2792,6 +2804,8 @@ Global
 		{F71E30A3-2F5B-4DB7-AA55-375C8C47BD7A} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{5E7E082F-086C-45A9-952C-C12DE35600D6} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{35031CD9-A326-4207-B872-A9F5036F4C06} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{1E8C6E92-421C-4654-88F3-21031362B45D} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{C65B6618-00E2-4744-A234-1EBD432F0024} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
