@@ -4,19 +4,14 @@ public class Solution
 {
     public int MinEatingSpeed(int[] piles, int h)
     {
-        if (piles.Select(e => (long)e)
-                 .Sum() <= h)
-            return 1;
-        else
-        {
-            int result = BinarySearch(1, 1000_000_000, piles, h);
-            return result;
-        }
+        int result = BinarySearch(1, 1000_000_000, piles, h);
+        return result;
     }
 
     private int BinarySearch(int v1, int v2, int[] piles, long h)
     {
-        //// V2 is always GOOD AND v1 is always BAD 
+        //// V2 is always GOOD AND v1 is always BAD except in the case that v1 == 1,
+        //// That needs to be calculated.
 
         while (v2 - v1 > 1)
         {
@@ -32,7 +27,12 @@ public class Solution
             }
         }
 
-        return v2;
+        if (v1 == 1 && v1 != v2 && piles.Sum() <= h)
+        {
+            return v1;
+        }
+        else
+            return v2;
     }
 
     private long CalculateHoursFor(int currentValue, int[] piles)
