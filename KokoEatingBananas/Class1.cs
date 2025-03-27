@@ -1,6 +1,6 @@
 ﻿namespace KokoEatingBananas;
 
-public class Solution
+public class Solution1
 {
     public int MinEatingSpeed(int[] piles, int h)
     {
