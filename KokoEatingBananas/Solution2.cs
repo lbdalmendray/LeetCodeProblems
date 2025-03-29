@@ -1,13 +1,17 @@
-﻿namespace KokoEatingBananas;
+﻿using System.Runtime.CompilerServices;
+
+namespace KokoEatingBananas;
 
 public class Solution
 {
     public int MinEatingSpeed(int[] piles, int h)
     {
+        //// THINK ABOUT INSTEAD OF 1000_000_000 implement a code (not Linq)
+        //// THAT FIND THE MAX OF PILES. 
         int result = BinarySearch(1, 1000_000_000, piles, h);
         return result;
     }
-
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private int BinarySearch(int v1, int v2, int[] piles, long h)
     {
         //// V2 is always GOOD AND v1 is always BAD except in the case that v1 == 1,
@@ -35,6 +39,7 @@ public class Solution
             return v2;
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private long CalculateHoursFor(int currentValue, int[] piles)
     {
         long result = 0;
