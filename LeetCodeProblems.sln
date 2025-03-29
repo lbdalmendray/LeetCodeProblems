@@ -864,9 +864,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopKFrequentElements", "Top
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopKFrequentElementsTest", "TopKFrequentElementsTest\TopKFrequentElementsTest.csproj", "{C65B6618-00E2-4744-A234-1EBD432F0024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KokoEatingBananas", "KokoEatingBananas\KokoEatingBananas.csproj", "{E17DB240-EF2E-4F39-96FA-B86B32B63C66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KokoEatingBananas", "KokoEatingBananas\KokoEatingBananas.csproj", "{E17DB240-EF2E-4F39-96FA-B86B32B63C66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KokoEatingBananasTest", "KokoEatingBananasTest\KokoEatingBananasTest.csproj", "{1132A517-D4DF-48B4-9926-8E4D71BE3798}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KokoEatingBananasTest", "KokoEatingBananasTest\KokoEatingBananasTest.csproj", "{1132A517-D4DF-48B4-9926-8E4D71BE3798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeIntervals", "MergeIntervals\MergeIntervals.csproj", "{F1954C76-1A16-423D-AE12-F1836363F90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeIntervalsTest", "MergeIntervalsTest\MergeIntervalsTest.csproj", "{4634CC99-CD79-409D-9E2C-7E23A5007061}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2546,6 +2550,14 @@ Global
 		{1132A517-D4DF-48B4-9926-8E4D71BE3798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1132A517-D4DF-48B4-9926-8E4D71BE3798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1132A517-D4DF-48B4-9926-8E4D71BE3798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1954C76-1A16-423D-AE12-F1836363F90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1954C76-1A16-423D-AE12-F1836363F90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1954C76-1A16-423D-AE12-F1836363F90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1954C76-1A16-423D-AE12-F1836363F90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4634CC99-CD79-409D-9E2C-7E23A5007061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4634CC99-CD79-409D-9E2C-7E23A5007061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4634CC99-CD79-409D-9E2C-7E23A5007061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4634CC99-CD79-409D-9E2C-7E23A5007061}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2820,6 +2832,8 @@ Global
 		{C65B6618-00E2-4744-A234-1EBD432F0024} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{E17DB240-EF2E-4F39-96FA-B86B32B63C66} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{1132A517-D4DF-48B4-9926-8E4D71BE3798} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{F1954C76-1A16-423D-AE12-F1836363F90D} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{4634CC99-CD79-409D-9E2C-7E23A5007061} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
