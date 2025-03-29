@@ -6,9 +6,14 @@ public class Solution
 {
     public int MinEatingSpeed(int[] piles, int h)
     {
-        //// THINK ABOUT INSTEAD OF 1000_000_000 implement a code (not Linq)
-        //// THAT FIND THE MAX OF PILES. 
-        int result = BinarySearch(1, 1000_000_000, piles, h);
+        int max = piles[0];
+        for (int i = 1; i < piles.Length; i++)
+        {
+            if (max < piles[i])
+                max = piles[i];
+        }
+
+        int result = BinarySearch(1, max, piles, h);
         return result;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
