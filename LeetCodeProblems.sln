@@ -868,9 +868,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KokoEatingBananas", "KokoEa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KokoEatingBananasTest", "KokoEatingBananasTest\KokoEatingBananasTest.csproj", "{1132A517-D4DF-48B4-9926-8E4D71BE3798}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeIntervals", "MergeIntervals\MergeIntervals.csproj", "{F1954C76-1A16-423D-AE12-F1836363F90D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeIntervals", "MergeIntervals\MergeIntervals.csproj", "{F1954C76-1A16-423D-AE12-F1836363F90D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeIntervalsTest", "MergeIntervalsTest\MergeIntervalsTest.csproj", "{4634CC99-CD79-409D-9E2C-7E23A5007061}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeIntervalsTest", "MergeIntervalsTest\MergeIntervalsTest.csproj", "{4634CC99-CD79-409D-9E2C-7E23A5007061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{4C06BC38-79B8-4762-9070-1AF4DEB36A67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskSchedulerTest", "TaskSchedulerTest\TaskSchedulerTest.csproj", "{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2558,6 +2562,14 @@ Global
 		{4634CC99-CD79-409D-9E2C-7E23A5007061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4634CC99-CD79-409D-9E2C-7E23A5007061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4634CC99-CD79-409D-9E2C-7E23A5007061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C06BC38-79B8-4762-9070-1AF4DEB36A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C06BC38-79B8-4762-9070-1AF4DEB36A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C06BC38-79B8-4762-9070-1AF4DEB36A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C06BC38-79B8-4762-9070-1AF4DEB36A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2834,6 +2846,8 @@ Global
 		{1132A517-D4DF-48B4-9926-8E4D71BE3798} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{F1954C76-1A16-423D-AE12-F1836363F90D} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{4634CC99-CD79-409D-9E2C-7E23A5007061} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{4C06BC38-79B8-4762-9070-1AF4DEB36A67} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
