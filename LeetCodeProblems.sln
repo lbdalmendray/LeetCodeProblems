@@ -876,6 +876,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskScheduler", "TaskSchedu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskSchedulerTest", "TaskSchedulerTest\TaskSchedulerTest.csproj", "{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWithMostWater", "ContainerWithMostWater\ContainerWithMostWater.csproj", "{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWithMostWaterTest", "ContainerWithMostWaterTest\ContainerWithMostWaterTest.csproj", "{200CF252-EF29-41DE-A040-CCFFB45B93C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2570,6 +2574,14 @@ Global
 		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{200CF252-EF29-41DE-A040-CCFFB45B93C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200CF252-EF29-41DE-A040-CCFFB45B93C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200CF252-EF29-41DE-A040-CCFFB45B93C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200CF252-EF29-41DE-A040-CCFFB45B93C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2848,6 +2860,8 @@ Global
 		{4634CC99-CD79-409D-9E2C-7E23A5007061} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{4C06BC38-79B8-4762-9070-1AF4DEB36A67} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{200CF252-EF29-41DE-A040-CCFFB45B93C5} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
