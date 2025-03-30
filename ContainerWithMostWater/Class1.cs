@@ -4,32 +4,46 @@ public class Solution
 {
     public int MaxArea(int[] height)
     {
-        int?[] minXArray = new int?[ 10_001]; 
-        int?[] maxXArray = new int?[ 10_001];
+        int?[] minXArray = new int?[10_001];
+        int?[] maxXArray = new int?[10_001];
 
-        for (int i = 0; i < height.Length; i++)
+        int maxHeight = 0;
+        int minHeight = 0;
+        int heightLength = height.Length;
+
+        //// INITIALIZING minXArray,maxXArray , maxHeight, minHeight 
+
+        for (int i = 0; i < heightLength; i++)
         {
             int cHeight = height[i];
-            if ( minXArray[cHeight] == null || minXArray[cHeight] > i )
+            if (maxHeight < cHeight)
+                maxHeight = cHeight;
+
+            if (minXArray[cHeight] == null)
+            {
+                minXArray[cHeight] = i;
+                maxXArray[cHeight] = i;
+            }
+            else if (minXArray[cHeight] > i)
             {
                 minXArray[cHeight] = i;
             }
-
-            if (maxXArray[cHeight] == null || maxXArray[cHeight] < i)
+            else if (maxXArray[cHeight] < i)
             {
                 maxXArray[cHeight] = i;
             }
         }
 
+        ////////        
+
         int result = 0;
         int minX = int.MaxValue;
         int maxX = int.MinValue;
+        //// UPDATING minX, maxX AND UPDATING THE result
 
-        for (int h = 10_000; h > -1; h--)
+        for (int h = maxHeight; h >= minHeight; h--)
         {
-            if (minXArray[h] == null)
-                continue;
-            else
+            if (minXArray[h] != null)
             {
                 if (minXArray[h] < minX)
                     minX = minXArray[h]!.Value;
@@ -39,11 +53,14 @@ public class Solution
 
                 int cResult = (maxX - minX) * h;
                 if (result < cResult)
+                {
                     result = cResult;
+                    minHeight = (int)Math.Ceiling((((double)cResult) / heightLength));
+                }
             }
         }
 
-        return result;
+        return (int)result;
     }
 
     public int MaxArea1(int[] height)
@@ -71,7 +88,7 @@ public class Solution
 
         int result = (maxX - minX) * height[positions.Length - 2];
 
-        for (int i = positions.Length - 3; i > -1 ; i--)
+        for (int i = positions.Length - 3; i > -1; i--)
         {
             int X = positions[i];
 

@@ -872,13 +872,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeIntervals", "MergeInte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeIntervalsTest", "MergeIntervalsTest\MergeIntervalsTest.csproj", "{4634CC99-CD79-409D-9E2C-7E23A5007061}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{4C06BC38-79B8-4762-9070-1AF4DEB36A67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{4C06BC38-79B8-4762-9070-1AF4DEB36A67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskSchedulerTest", "TaskSchedulerTest\TaskSchedulerTest.csproj", "{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskSchedulerTest", "TaskSchedulerTest\TaskSchedulerTest.csproj", "{BF5BCD96-7B01-4858-8AAB-095DCDBE8398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWithMostWater", "ContainerWithMostWater\ContainerWithMostWater.csproj", "{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerWithMostWater", "ContainerWithMostWater\ContainerWithMostWater.csproj", "{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWithMostWaterTest", "ContainerWithMostWaterTest\ContainerWithMostWaterTest.csproj", "{200CF252-EF29-41DE-A040-CCFFB45B93C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerWithMostWaterTest", "ContainerWithMostWaterTest\ContainerWithMostWaterTest.csproj", "{200CF252-EF29-41DE-A040-CCFFB45B93C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateParentheses", "GenerateParentheses\GenerateParentheses.csproj", "{C3776B28-2753-4B24-94E3-D28F631B6868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateParenthesesTest", "GenerateParenthesesTest\GenerateParenthesesTest.csproj", "{6CC5B6B2-D69E-4448-A8A6-D5D283FF06A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2582,6 +2586,14 @@ Global
 		{200CF252-EF29-41DE-A040-CCFFB45B93C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{200CF252-EF29-41DE-A040-CCFFB45B93C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200CF252-EF29-41DE-A040-CCFFB45B93C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3776B28-2753-4B24-94E3-D28F631B6868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3776B28-2753-4B24-94E3-D28F631B6868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3776B28-2753-4B24-94E3-D28F631B6868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3776B28-2753-4B24-94E3-D28F631B6868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC5B6B2-D69E-4448-A8A6-D5D283FF06A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC5B6B2-D69E-4448-A8A6-D5D283FF06A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC5B6B2-D69E-4448-A8A6-D5D283FF06A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC5B6B2-D69E-4448-A8A6-D5D283FF06A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2862,6 +2874,8 @@ Global
 		{BF5BCD96-7B01-4858-8AAB-095DCDBE8398} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{9BE8BD83-4B11-4EFF-9D9D-5ACAD6050BEE} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{200CF252-EF29-41DE-A040-CCFFB45B93C5} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{C3776B28-2753-4B24-94E3-D28F631B6868} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{6CC5B6B2-D69E-4448-A8A6-D5D283FF06A1} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
