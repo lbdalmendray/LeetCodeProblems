@@ -18,6 +18,7 @@ namespace RottingOranges
                 return 0;
             /// position and minutes 
             LinkedList<(int,int,int)> rottenList = GetRottenList(grid);
+            int count = rottenList.Count;
             while(rottenList.Count != 0)
             {
                 var ( x,y,minutes ) = rottenList.First.Value ;
@@ -29,9 +30,26 @@ namespace RottingOranges
                 {
                     grid[cX][cY] = 2;
                     rottenList.AddLast((cX,cY,minutesPlus1));
+                    count++;
                 }
             }
-            return result;
+            bool freshOrangeAlive = false;
+            for (int i = 0; i < grid.Length; i++)
+            {
+                for (int j = 0; j < grid[0].Length; j++)
+                {
+                    if (grid[i][j] == 1)
+                    {
+                        freshOrangeAlive = true;
+                        break;
+                    }
+                }
+
+                if (freshOrangeAlive)
+                    break;
+            }
+
+            return freshOrangeAlive ?  -1 : result;
         }
         LinkedList<(int,int,int)> GetRottenList(int[][] grid)
         {

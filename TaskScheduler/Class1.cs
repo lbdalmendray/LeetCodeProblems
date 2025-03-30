@@ -1,4 +1,6 @@
-﻿namespace TaskScheduler;
+﻿using System.Runtime.CompilerServices;
+
+namespace TaskScheduler;
 
 public class Solution
 {
@@ -42,71 +44,62 @@ public class Solution
         int time = 0;
         while(sortedDict.Count > 0)
         {
-            LinkedListNode<Info> nextInfo = GetNextAvailableInfo(sortedDict, time, n);
-            if ( nextInfo != null)
+            LinkedListNode<Info> nextInfoNode = GetNextAvailableInfoNode(sortedDict, time, n);
+            if(nextInfoNode == null)
             {
-                RemoveInfoFrom(nextInfo, sortedDict);
-                nextInfo.Value.lastTimeExecuted = time;
-                nextInfo.Value.count--;
-                if (nextInfo.Value.count > 0)
-                    AddInfoTo(nextInfo, sortedDict);
+                nextInfoNode = GetFirstFromSortedDict(sortedDict);
+                time = n + nextInfoNode.Value.lastTimeExecuted + 1 ;
             }
-            else
-            {
-                nextInfo = GetFirstFromSortedDict(sortedDict);
-                RemoveInfoFrom(nextInfo, sortedDict);
-                
-                time = n + nextInfo.Value.lastTimeExecuted + 1 ;
-                
-                nextInfo.Value.lastTimeExecuted = time;
-                nextInfo.Value.count--;
-                if (nextInfo.Value.count > 0)
-                    AddInfoTo(nextInfo, sortedDict);
-            }
+            
+            RemoveInfoFrom(nextInfoNode, sortedDict);
+            
+            var info = nextInfoNode.Value;
+            info.lastTimeExecuted = time;
+            info.count--;
+            if (info.count > 0)
+                AddInfoTo(info, sortedDict);
 
             time++;
         }
 
         return time;
     }
-
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private LinkedListNode<Info> GetFirstFromSortedDict(SortedDictionary<int, LinkedList<Info>> sortedDict)
     {
         return sortedDict.First().Value.First!;
     }
 
-    private void AddInfoTo(LinkedListNode<Info> nextInfo, SortedDictionary<int, LinkedList<Info>> sortedDict)
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private void AddInfoTo(Info nextInfo, SortedDictionary<int, LinkedList<Info>> sortedDict)
     {
-        if( !sortedDict.TryGetValue(nextInfo.Value.count, out var list))
+        if( !sortedDict.TryGetValue(nextInfo.count, out var list))
         {
             list = new LinkedList<Info>();
-            sortedDict[nextInfo.Value.count] = list;
+            sortedDict[nextInfo.count] = list;
         }
-        list.AddLast(nextInfo.Value);
+        list.AddLast(nextInfo);
     }
 
-    private void RemoveInfoFrom(LinkedListNode<Info> nextInfo, SortedDictionary<int, LinkedList<Info>> sortedDict)
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private void RemoveInfoFrom(LinkedListNode<Info> nextInfoNode, SortedDictionary<int, LinkedList<Info>> sortedDict)
     {
-        if (sortedDict.TryGetValue(nextInfo.Value.count, out var list))
-        {
-            list.Remove(nextInfo);
-            if (list.Count == 0)
-                sortedDict.Remove(nextInfo.Value.count);
-        }       
+        var list = nextInfoNode.List;
+        list.Remove(nextInfoNode);
+        if (list.Count == 0)
+            sortedDict.Remove(nextInfoNode.Value.count);
     }
 
-    private LinkedListNode<Info> GetNextAvailableInfo(SortedDictionary<int, LinkedList<Info>> sortedDict, int time, int n)
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private LinkedListNode<Info> GetNextAvailableInfoNode(SortedDictionary<int, LinkedList<Info>> sortedDict, int time, int n)
     {
         foreach (var keyValue in sortedDict)
         {
             var infoNode = keyValue.Value.First;
-            while( infoNode != null)
-            {
-                if (time - infoNode.Value.lastTimeExecuted > n)
-                    return infoNode;
-                else
-                    infoNode = infoNode.Next;
-            }
+            if (time - infoNode.Value.lastTimeExecuted > n)
+                return infoNode;
+            else
+                continue;
         }
         return null;
     }
