@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using InterleavingString;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Utils;
 
 namespace InterleavingStringTest
 {
