@@ -1,6 +1,7 @@
 ﻿using System;
 using FindWinneronaTicTacToeGame;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Utils;
 
 namespace FindWinneronaTicTacToeGameTest
 {

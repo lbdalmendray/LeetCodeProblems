@@ -2,6 +2,7 @@
 using System.Linq;
 using LongestValidParentheses;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Utils;
 
 namespace LongestValidParenthesesTest
 {
