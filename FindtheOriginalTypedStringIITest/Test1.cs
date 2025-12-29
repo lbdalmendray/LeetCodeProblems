@@ -1,7 +1,7 @@
 ﻿using FindtheOriginalTypedStringII;
 using System;
 using System.Numerics;
-using Solution = FindtheOriginalTypedStringII.Solution2;
+using Solution = FindtheOriginalTypedStringII.Solution3;
 namespace FindtheOriginalTypedStringIITest;
 
 [TestClass]
@@ -309,5 +309,14 @@ public sealed class Test1
         var result = solution.PossibleStringCount("abcdef"
             , 6);
         Assert.AreEqual(1, result);
+    }
+
+    [TestMethod]
+    public void TestMethod15()
+    {
+        Solution solution = new Solution();
+        var result = solution.PossibleStringCount("dvvpssguuellxxdduuddggxyccqqookkhhoowwyssoobbtnnddfweeccmoqqjgleaazziijjzzbbjjkkkossllueexmiiyyodvvl"
+            , 88);
+        Assert.AreEqual(135884609, result);
     }
 }
