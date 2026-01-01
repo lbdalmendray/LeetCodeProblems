@@ -900,6 +900,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaultyKeyboard", "FaultyKey
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaultyKeyboardTest", "FaultyKeyboardTest\FaultyKeyboardTest.csproj", "{0E6779C1-FA27-4F2B-8459-956D7299E2F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalTraverse", "DiagonalTraverse\DiagonalTraverse.csproj", "{B0807996-B4A9-4C62-983E-0C170BD99143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalTraverseTest", "DiagonalTraverseTest\DiagonalTraverseTest.csproj", "{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2638,6 +2642,14 @@ Global
 		{0E6779C1-FA27-4F2B-8459-956D7299E2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E6779C1-FA27-4F2B-8459-956D7299E2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E6779C1-FA27-4F2B-8459-956D7299E2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0807996-B4A9-4C62-983E-0C170BD99143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0807996-B4A9-4C62-983E-0C170BD99143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0807996-B4A9-4C62-983E-0C170BD99143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0807996-B4A9-4C62-983E-0C170BD99143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2925,6 +2937,8 @@ Global
 		{CB0671D0-52B9-437D-B72E-1E270441E47A} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{430EC9B3-32B0-4C0F-866D-89C5F6ED5C3E} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{0E6779C1-FA27-4F2B-8459-956D7299E2F5} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{B0807996-B4A9-4C62-983E-0C170BD99143} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
