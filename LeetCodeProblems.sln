@@ -904,6 +904,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalTraverse", "Diagona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalTraverseTest", "DiagonalTraverseTest\DiagonalTraverseTest.csproj", "{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumberofEventsThatCanBeAttended", "MaximumNumberofEventsThatCanBeAttended\MaximumNumberofEventsThatCanBeAttended.csproj", "{A137A832-302A-4EDB-8249-4E2E27299D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumberofEventsThatCanBeAttendedTest", "MaximumNumberofEventsThatCanBeAttendedTest\MaximumNumberofEventsThatCanBeAttendedTest.csproj", "{5E174D44-E468-4C3B-B790-043CFE464EE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2650,6 +2654,14 @@ Global
 		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A137A832-302A-4EDB-8249-4E2E27299D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A137A832-302A-4EDB-8249-4E2E27299D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A137A832-302A-4EDB-8249-4E2E27299D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A137A832-302A-4EDB-8249-4E2E27299D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E174D44-E468-4C3B-B790-043CFE464EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E174D44-E468-4C3B-B790-043CFE464EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E174D44-E468-4C3B-B790-043CFE464EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E174D44-E468-4C3B-B790-043CFE464EE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2939,6 +2951,8 @@ Global
 		{0E6779C1-FA27-4F2B-8459-956D7299E2F5} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{B0807996-B4A9-4C62-983E-0C170BD99143} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{A137A832-302A-4EDB-8249-4E2E27299D6F} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{5E174D44-E468-4C3B-B790-043CFE464EE1} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
