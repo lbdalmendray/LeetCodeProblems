@@ -908,6 +908,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumberofEventsThatCa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumberofEventsThatCanBeAttendedTest", "MaximumNumberofEventsThatCanBeAttendedTest\MaximumNumberofEventsThatCanBeAttendedTest.csproj", "{5E174D44-E468-4C3B-B790-043CFE464EE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReorderedPowerof2", "ReorderedPowerof2\ReorderedPowerof2.csproj", "{181D0DDC-752D-4052-8F91-DFC8C2A70958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReorderedPowerof2Test", "ReorderedPowerof2Test\ReorderedPowerof2Test.csproj", "{2BB37345-D716-4C49-83E6-4E89B5586DC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2662,6 +2666,14 @@ Global
 		{5E174D44-E468-4C3B-B790-043CFE464EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E174D44-E468-4C3B-B790-043CFE464EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E174D44-E468-4C3B-B790-043CFE464EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181D0DDC-752D-4052-8F91-DFC8C2A70958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181D0DDC-752D-4052-8F91-DFC8C2A70958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181D0DDC-752D-4052-8F91-DFC8C2A70958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181D0DDC-752D-4052-8F91-DFC8C2A70958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB37345-D716-4C49-83E6-4E89B5586DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB37345-D716-4C49-83E6-4E89B5586DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB37345-D716-4C49-83E6-4E89B5586DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB37345-D716-4C49-83E6-4E89B5586DC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2953,6 +2965,8 @@ Global
 		{829DBEC4-6FC4-4F60-AF91-03B7E9F2AAFF} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{A137A832-302A-4EDB-8249-4E2E27299D6F} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 		{5E174D44-E468-4C3B-B790-043CFE464EE1} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{181D0DDC-752D-4052-8F91-DFC8C2A70958} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
+		{2BB37345-D716-4C49-83E6-4E89B5586DC0} = {066CEBBA-78ED-4997-B0EF-46FA9EBF020E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E59AE0-B6BE-4C1B-8BCE-068B8A713CB7}
