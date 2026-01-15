@@ -1,7 +1,27 @@
-﻿using System.Text;
+﻿using System.Buffers.Text;
+using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ReorderedPowerof2;
 
+/// <summary>
+/// Solution2 
+/// 
+// The idea here is that each power of 2, P, (between[1, 1000_000_000],
+// P = d0 d2...dL-1) can be transformed to any other number N where its digits are a permutation of
+// the digits of P(d0, d2,..., dL-1) with no leadign Zeros.
+// So, based on this idea P and N also can be transformed to the minimum permutation M that is the minimum
+// permutation of the digits of P (d0, d2,...., dL-1) with no leadign Zeros and it is the
+// 
+// So if we precalculate each M for each P (let's call it SetM), so we have them in code, then the only
+// thing that we need to do in ReorderedPowerOf2 is to calculate the minimum nOrderedInt related to n(input),
+// and look for nOrderedInt in the SetM related to all the Ps precalculated. If nOrderedInt is in SetM, then
+// the answer is TRUE, other case it is FALSE.
+// 
+// BTW, you can check that each power of 2 between[1, 1000_000_000], it has a unique Minimum permutation
+// different from the rest of Minimum Permutations related to the rest of power of 2 between[1, 1000_000_000].
+/// 
+/// </summary>
 public class Solution2
 {
     private readonly int[] power10List = new int[10] { 1, 10, 100, 1000, 10_000, 100_000, 1000_000, 10_000_000, 100_000_000, 1000_000_000 };
