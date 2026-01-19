@@ -9,25 +9,26 @@ public class Solution3
     public int MaximizeSquareArea(int m, int n, int[] hFences, int[] vFences)
     {
         long? result = null;
-        
+
         /// I COULD NOT FIND A PLACE THAT SAYS THAT THE FANCES ARE SORTED.
         Array.Sort(hFences);
         Array.Sort(vFences);
         /////
 
-        long[] hSums = new long[hFences.Length+1];
-        long[] vSums = new long[vFences.Length+1];
-        hSums[0] = hFences[0]-1;
-        vSums[0] = vFences[0]-1;
+        long[] hSums = new long[hFences.Length + 1];
+        long[] vSums = new long[vFences.Length + 1];
+        hSums[0] = hFences[0] - 1;
+        vSums[0] = vFences[0] - 1;
 
-        for (int i = 1; i < hFences.Length; i++)
+        int i = 1;
+        for (; i < hFences.Length; i++)
         {
-            hSums[i] = hSums[i - 1] + (hFences[i]- hFences[i-1]);
+            hSums[i] = hSums[i - 1] + (hFences[i] - hFences[i - 1]);
         }
 
         for (int j = 1; j < vFences.Length; j++)
         {
-            vSums[j] = vSums[j - 1] + (vFences[j] - vFences[j-1]);
+            vSums[j] = vSums[j - 1] + (vFences[j] - vFences[j - 1]);
         }
 
         hSums[hFences.Length] = hSums[hFences.Length - 1] + (m - hFences[hFences.Length - 1]);
@@ -47,26 +48,50 @@ public class Solution3
             minSums = hSums;
         }
 
-        HashSet<long> minSides = new HashSet<long>();
+        HashSet<long> minSides = new HashSet<long>((minSums.Length) * (minSums.Length + 1) / 2);
 
-        for (int i = 0; i < minSums.Length; i++)
+        i = 0;
+        for (int j = i; j < minSums.Length; j++)
+        {
+            long side = minSums[j];
+            minSides.Add(side);
+        }
+
+        for (i = 1; i < minSums.Length; i++)
         {
             for (int j = i; j < minSums.Length; j++)
             {
-                long side = minSums[j] - (i == 0 ? 0 : minSums[i - 1]);
-                minSides.Add(side); 
+                long side = minSums[j] - minSums[i - 1];
+                minSides.Add(side);
+            }
+        }
+        i = 0;
+        for (int j = i; j < maxSums.Length; j++)
+        {
+            long side = maxSums[j];
+
+            if (minSides.Contains(side))
+            {
+                if (result.HasValue)
+                {
+                    result = Math.Max(result.Value, side);
+                }
+                else
+                {
+                    result = side;
+                }
             }
         }
 
-        for (int i = 0; i < maxSums.Length; i++)
+        for (i = 1; i < maxSums.Length; i++)
         {
             for (int j = i; j < maxSums.Length; j++)
             {
-                long side = maxSums[j] - (i == 0 ? 0 : maxSums[i - 1]);
+                long side = maxSums[j] - maxSums[i - 1];
 
                 if (minSides.Contains(side))
                 {
-                    if ( result.HasValue)
+                    if (result.HasValue)
                     {
                         result = Math.Max(result.Value, side);
                     }
